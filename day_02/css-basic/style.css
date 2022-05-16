@@ -1,0 +1,40 @@
+h2 {
+    color: red;
+}
+
+/* Dùng ID. Dùng dấu thăng */
+#heading {
+    color:blue
+}
+
+p {
+    color: cornflowerblue
+}
+
+/* Dùng Class. Dùng dấu chấm */
+.text {
+    background-color: bisque
+}
+.text1{
+    font-size: larger;
+}
+
+/* Có thể chọn 2 class cùng 1 lúc. Có thể chọn lẫn cả phần từ + ID + class.*/
+.text.text1{
+
+}
+
+.box p {
+    font-weight: bold;
+}
+
+h2, p {
+    text-align: center;
+}
+
+/* Chọn thẻ p vừa có cả class text+tex1 */
+p.text.text1 {
+    font-size: x-small;
+}
+
+/* KHI ĐỌC CSS LUÔN ĐỌC TỪ PHẢI SANG TRÁI */

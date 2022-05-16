@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>FullName</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Nguyễn Văn A</td>
+          <td>Nhân viên</td>
+          <td>1000$</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">2</td>
+          <td rowspan="2">Trần Văn B</td>
+          <td>Giám đốc</td>
+          <td>3000$</td>
+        </tr>
+
+        <tr>
+          <td>Quản lý nhân sự</td>
+          <td>2000$</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Ngô Thị C</td>
+          <td>Trưởng phòng kinh doanh</td>
+          <td>2000$</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
