@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    background-color: #464646;
+}
+
+.footer {
+    text-align: center;
+    margin: 15px 25px;
+    color: #fff;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+li {
+    display: list-item;
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(194, 194, 194);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
