@@ -1,0 +1,114 @@
+/* clear 1 số thuộc tính về trạng thái ban đầu */
+* {
+    margin: 0;
+    /* margin là khoảng cách từ border sang bên ngoài */
+    padding: 0;
+    /* padding là khoảng cách từ nội dung đến border */
+    box-sizing: border-box;
+    /* box sizing dùng để kiểm soát kích thước của 1 phần tử. Luôn - width/height phần từ. */
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    padding-right: 15px;
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    line-height: 1.5;
+    color: #464646;
+}
+
+.class {
+    width: 320px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+
+div {
+    display: block;
+}
+
+.time {
+    text-align: center;
+    min-height: 160px;
+    color: #fff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: relative;
+    font-weight: 400;
+    background-color: #fbbc05;
+}
+
+.year {
+    background-color: #f89707;
+    border-top-left-radius: 4px;
+    padding: 3px 0;
+}
+
+.dateandmonth {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+}
+
+.date {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.info {
+    padding: 1rem 1.5rem 0 1.5rem;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.3rem;
+}
+
+.title a {
+    color:#464646;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+.timetable {
+    padding: 7px 0;
+    font-size: .9rem;
+}
+
+.timetable-item {
+    width: 100%;
+    margin-top: 5px;
+    float: left;
+}
+
+.timetable-item i {
+    color: #757575;
+}
+
+.clear {
+    clear: both;
+}
+
+.register {
+    padding: 7px 0 5px 0;
+    color: #3c78e8;
+    border-top: 0.5px solid #c4c4c4e3;
+    cursor: pointer;
+}
+.register a {
+    text-decoration: none;
+}
+
