@@ -1,0 +1,45 @@
+:root{
+    font-size: 14px;
+    --color-text : #4C415B;
+    --color-heading : #08AA6E;
+}
+
+/* REM tham chiếu đến font-size của trình duyệt (giá trị mặc định là 16px) */
+.text {
+    /* Có thể xét lại giá trị màu ở trong phần tử, màu của các selector khác thì vẫn theo mặc định */
+    --color-text: #2425EC;
+    font-size: 2rem;
+    color: var(--color-text); 
+}
+
+.box {
+    font-size: 20px;
+}
+
+/* EM tham chiếu đến font-size của cha */
+.box p {
+    font-size: 2em;
+    color: var(--color-text);
+}
+
+.shape {
+    width: 50vw;
+    height: 50vh;
+    background-color: brown;
+}
+
+.parent {
+    width: 50vw;
+    height: 50vh;
+    background-color: brown;
+}
+
+.child {
+    width: 100%;
+    height: 50%;
+    background-color: peru;
+}
+
+.heading {
+    color: var(--color-heading);
+}
