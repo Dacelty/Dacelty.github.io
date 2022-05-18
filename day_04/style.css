@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* justify content dùng nhiều nhất là center, space-around, space-between */
+.container {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+    height: 600px;
+    /* align-items:baseline; */
+
+    /* Khi kích thước của container không đủ cho các item thì flex-wrap sẽ làm cho các item tự cuộn */
+    flex-wrap:wrap;
+
+    /* Dàn hàng, chứ không phải là dàn item. */
+    align-content:center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    color: white;
+    font-size: 2rem;
+
+    border: 2px solid black;
+    text-align: center;
+    /* line-height: 100px; */
+
+    /* Cách cho phần tử vào giữa cả hàng lẫn cột. */
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+    /* xem các thẻ giá trị cho item trên web learn. Flex-basis, flex-direction dùng nhiều     */
+    /* ví dụ nếu có 4 item trong container, flex-basis:25% sẽ dàn các item luôn luôn kín độ rộng của container*/
+    /* align-self chỉ dành cho đúng 1 item */
+}
