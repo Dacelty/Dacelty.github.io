@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.header {
+    background-color: #30598C;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+}
+
+/* ul là con trực tiếp của menu (Tức là là con trực tiếp của menu) */
+
+/* style menu */
+.menu > ul {
+    display: flex;
+}
+
+.menu-item {
+    color: #fff;
+    font-size: 15px;
+    margin: 0 15px;
+    position: relative;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.menu-item span {
+    margin-left: 5px;
+}
+
+.menu-item:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    top: 100%;
+    right: 0;
+
+    width: 200%;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #212529;
+
+    display: none;
+}
+
+.sub-menu-item {
+    padding: 11px 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sub-menu-item:hover {
+    background-color: #C4C4C4;
+    color: #fff;
+}
+
+/* style shopping cart */
+
+.avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}

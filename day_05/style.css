@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: chocolate;
+
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    /* z-index làm cho thuộc tính nổi lên trên các thuộc tính khác. Cần có position nếu ko thì ko dùng đc */
+    z-index: 3;
+}
+
+.parent {
+    width: 700px;
+    height: 400px;
+    background-color: bisque;
+    position: relative;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+
+    /* Nếu parent không có pos relative thì thẻ con sẽ tìm và tính theo thẻ cha gần nhất (ở đây là body) */
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.btn-top {
+    padding: 10px 30px;
+    background-color: tomato;
+    color: white;
+    border: none;
+
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.sticky {
+    height: 100px;
+    background-color: darkorange;
+
+    position: sticky;
+    top: 50px;
+    left: 0;
+}
