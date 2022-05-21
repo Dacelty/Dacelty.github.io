@@ -21,7 +21,7 @@ img {
     overflow: hidden; 
 }
 
-.image {
+.card .image {
     height: 240px;
 }
 
