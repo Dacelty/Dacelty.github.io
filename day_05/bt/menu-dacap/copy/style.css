@@ -35,7 +35,6 @@ body {
 .menu-root {
   background-color: #fff;
   position: relative;
-  box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
   margin-left: 150px;
   margin-right: 150px;
   padding-top: 6px;
@@ -63,9 +62,7 @@ body {
   color: #757575;
 }
 
-.menu-item p .icon {
-  display: none;
-}
+
 
 .menu-item:hover > p,
 .menu-item:hover > p a {
@@ -112,10 +109,4 @@ body {
 
 .sub-menu:hover .sub-menu2 {
   display: block;
-}
-
-li {
-  overflow:hidden; 
-  white-space:nowrap; 
-  text-overflow:ellipsis;
 }
