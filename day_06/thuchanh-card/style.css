@@ -1,0 +1,80 @@
+/* clear 1 số thuộc tính về trạng thái ban đầu */
+* {
+    margin: 0;
+    /* margin là khoảng cách từ border sang bên ngoài */
+    padding: 0;
+    /* padding là khoảng cách từ nội dung đến border */
+    box-sizing: border-box;
+    /* box sizing dùng để kiểm soát kích thước của 1 phần tử. Luôn - width/height phần từ. */
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+}
+
+/* Auto xuất hiện khi trang web có ảnh*/
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    transition: all 1s;
+}
+
+.card {
+    width: 320px;
+    box-shadow: 0 1px 2px;
+    margin:auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.content{
+    transform: translateY(300px);
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.title {
+    font-size: 19px;
+    color: #464646;
+    font-weight: 400;
+}
+
+.type, .rating {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 100;
+}
+
+.type {
+    margin: 5px 0;
+
+}
+
+.rating span {
+    color: #ffd600;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Khi hover vào .card thì có 2 hiệu ứng diễn ra:
+1. Scale ảnh lên 1.2 (sử dụng transform 1 scale)
+2. Phần nội dung đặt ở bên ngoài, khi hover vào card thì xuất hiện như h2, p2 ở VD trước */
+
+.image {
+    overflow: hidden;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+.card:hover .content {
+    transform: translateY(0px);
+}
