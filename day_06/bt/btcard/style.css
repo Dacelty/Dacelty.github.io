@@ -42,9 +42,9 @@ img {
 }
 
 .title {
-    font-size: 19px;
-    color: #464646;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
 }
 
 .type, .rating {
@@ -53,19 +53,12 @@ img {
     font-weight: 100;
 }
 
-.type {
-    margin: 5px 0;
-
+.info {
+    color: #C25D57;
 }
 
 .rating span {
     color: #ffd600;
-}
-
-.info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .image {
@@ -162,11 +155,15 @@ img {
 
     position: relative;
     left: -20px;
-    top: -233px
+    top: -208px
 }
 
 .info-tag p {
     line-height: 0.94;
     font-weight: bold;
     font-size: smaller;
+}
+
+.fa-clock, .fa-comments {
+    padding-right: 2px;
 }
