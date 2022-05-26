@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    transition: all 1s;
+}
+
+.card {
+    width: 330px;
+    height: 380px;
+    box-shadow: 0 1px 2px;
+    margin:auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.content{
+    transform: translateY(100px);
+    padding: 20px;
+    position: relative;
+    z-index: 3;
+    background-color:white;
+    height: 220px;
+
+
+    transition: all 0.3s;
+}
+
+.title {
+    font-size: 19px;
+    color: #464646;
+    font-weight: 400;
+}
+
+.type, .rating {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 100;
+}
+
+.type {
+    margin: 5px 0;
+
+}
+
+.rating span {
+    color: #ffd600;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+    -webkit-filter: brightness(70%);
+}
+
+.card:hover .content {
+    transform: translateY(0px);
+}
+
+.date {
+    background-color: red;
+    color: white;
+    z-index: 3;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -365px;
+    left: 265px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.day, .month {
+    line-height: 0.94;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.info2 {
+    padding-top: 9px;
+    position: relative;
+    transform: translateY(100px);
+    transition: all 0.3s;
+
+    color: gray;
+    font-weight: 400;
+    opacity: 0;
+}
+
+.card:hover .info2 {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    z-index: 3;
+    padding-top: 10px;
+    padding-bottom: 25px;
+
+    font-size: smaller;
+    color: gray;
+}
+
+.last-post {
+    padding-left: 20px;
+}
+
+.comment-no {
+    padding-left: 25px;
+}
+
+.info-tag-card {
+    background-color: red;
+    width: 90px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    position: relative;
+    left: -20px;
+    top: -233px
+}
+
+.info-tag p {
+    line-height: 0.94;
+    font-weight: bold;
+    font-size: smaller;
+}
