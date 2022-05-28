@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tuyet-roi {
+    width: auto;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.fa-snowflake {
+    color: white;
+}
+
+.t1 {
+    animation-name: animation1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+
+.t2 {
+    animation-name: animation2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+
+    position: absolute;
+    top: 5%;
+    left: 14%;
+}
+
+.t3 {
+    animation-name: animation3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+
+    position: absolute;
+    top: 5%;
+    left: 18%;
+}
+
+@keyframes animation1 {
+    0% {
+
+    }
+}

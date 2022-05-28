@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: darkorange;
+
+    /* animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate; */
+
+    /* animation:animation 2s 1s infinite reverse ;
+
+    position: relative; */
+}
+
+/* @keyframes animation {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: darkorange;
+    }
+    25% {
+        top: 0;
+        left: 300px;
+        background-color: black;
+    }
+    50% {
+        top: 300px;
+        left: 300px;
+        background-color: blue;
+    }
+    75% {
+        top: 300px;
+        left: 0;
+        background-color: blueviolet;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background-color: darkorange;
+    }
+} */
+
+.banner {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -10px --200px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 600px;
+    text-align: center;
+    font-size: smaller;
+}
+
+.content h2 {
+    animation: heading 2s;
+}
+
+@keyframes heading {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+/* .content p {
+    animation: text1 2s;
+}
+
+@keyframes text1 {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+} */
+
+.banner1 {
+    background-image: url(https://images.unsplash.com/photo-1653580137336-8bf40907aba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) ;
+}
+
+.banner2 {
+    background-image: url(https://images.unsplash.com/photo-1653604172943-edefd592d23c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+
+.banner3 {
+    background-image: url(https://images.unsplash.com/photo-1653491888857-6cb8c8f0264c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+
+/* Thư viện animate.style */
+
+.text {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.animate__fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
