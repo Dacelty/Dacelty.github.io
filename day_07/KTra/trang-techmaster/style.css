@@ -188,9 +188,22 @@ img {
   text-decoration: underline;
   text-decoration-color: red;
   font-weight: 700;
+  animation: animation-ct 1s;
 
   display: flex;
   flex-direction: column;
+}
+
+@keyframes animation-ct {
+    0% {
+        opacity: 0;
+        transform: translate(0%, -50%);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .title-image hr {
@@ -216,25 +229,14 @@ img {
     linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
 }
 
-.index-main h2 {
-  font-size: 27px;
-  text-align: center;
-  font-weight: 500;
-  color: white;
-
-  padding: 25px 25px;
-  line-height: 1.3;
-  letter-spacing: 1.2;
-  font-weight: 400;
-  font-style: italic;
-}
-
 
 
 .owl-carousel {
-  margin-top: 25px;
   padding: 25px 75px;
-  transform: scale(0.8);
+  transform: scale(0.85);
+
+  position: relative;
+  top: -25px;
 }
 
 .banner {
@@ -476,8 +478,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  transform: scale(0.8);
+  position: relative;
+  top: -25px;
 }
 
 .images a {
   flex-basis: 33.33%;
+  padding: 4px 4px;
 }
