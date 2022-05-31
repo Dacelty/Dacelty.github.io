@@ -11,7 +11,7 @@ public class BT {
         System.out.println(a/b);
         System.out.println(b/a);
 
-        
+
         int i1 = 5, i2 = 5;
         // Trả giá trị i1 là 5
         // Sau đó giá trị của i1 mới được tăng lên 6.
