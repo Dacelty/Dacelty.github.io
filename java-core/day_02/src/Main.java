@@ -51,5 +51,10 @@ public class Main {
         System.out.println("Xin chào, tôi tên là \"Ngọc\". \tTôi đến từ Hà Giang.");
 
         String s = "Tôi đến từ \"Hà Giang\"";
+
+        Gender nam = Gender.MALE;
+        System.out.println(nam);
+        Gender nu = Gender.FEMALE;
+        System.out.println(nu);
     }
 }
