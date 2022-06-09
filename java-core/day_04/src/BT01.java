@@ -14,7 +14,7 @@ public class BT01 {
             String first = w.substring(0,1);
             String rest = w.substring(1);
 
-            newString+=first.toUpperCase()+ rest+ " ";
+            newString+=first.toUpperCase() +rest+ " ";
         }
 
         System.out.println("Chuỗi được chuẩn hóa :");
