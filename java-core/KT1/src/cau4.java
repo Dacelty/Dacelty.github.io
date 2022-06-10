@@ -2,24 +2,21 @@ public class cau4
 {
     public static void main(String[] args)
     {
-        int ct=0,n=0,i=1,j=1;
+        int n=0,i=1;
+        System.out.println("10 số nguyên tố đầu tiên :");
         while(n<10)
         {
-            j=1;
-            ct=0;
-            while(j<=i)
-            {
-                if(i%j==0)
-                    ct++;
-                j++;
-            }
-            if(ct==2)
+            if (isPrimeNumber(i))
             {
                 System.out.printf("%d ",i);
                 n++;
+                if (i<10){
+                    System.out.println(" - số nguyên tố này nhỏ hơn 10.");
+                }
             }
             i++;
         }
+
     }
 
     public static boolean isPrimeNumber(int n) {

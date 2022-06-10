@@ -10,11 +10,14 @@ public class cau2 {
         }
         System.out.println("Chuỗi có "+soTu+" từ");
 
+        System.out.println("Chuỗi có ký tự o nằm ở index số :");
         for (int i=0; i<yolo.length(); i++){
             if (yolo.charAt(i)=='o'){
+                System.out.printf(i+" ");
                 soKyTuO=soKyTuO+1;
             }
         }
+        System.out.println("");
         System.out.println("Chuỗi có "+soKyTuO+" ký tự o.");
     }
 }
