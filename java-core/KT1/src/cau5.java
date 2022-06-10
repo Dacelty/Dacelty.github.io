@@ -9,19 +9,19 @@ public class cau5 {
         System.out.println("Nhập số cột của mảng :");
         col = scanner.nextInt();
 
-        int[][] array = new int[row][col];
+        int[][] arrayA = new int[row][col];
 
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                System.out.print("Nhập phần tử thứ [" + i + ", " + j + "]: ");
-                array[i][j] = scanner.nextInt();
+                System.out.print("Nhập phần tử thứ [" + i + ", " + j + "] của mảng 1: ");
+                arrayA[i][j] = scanner.nextInt();
             }
         }
 
         System.out.println("Mảng vừa nhập: ");
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                System.out.print(array[i][j] + "\t");
+                System.out.print(arrayA[i][j] + "\t");
             }
             System.out.println("");
         }
@@ -46,7 +46,7 @@ public class cau5 {
         int[][] arrayC = new int[row][col];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                arrayC[i][j] = array[i][j]+arrayB[i][j];
+                arrayC[i][j] = arrayA[i][j]+arrayB[i][j];
             }
         }
 
