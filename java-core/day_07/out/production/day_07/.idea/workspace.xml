@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa630c72-0b55-4ae8-90f1-4fcc21d15a9d" name="Changes" comment="" />
+    <list default="true" id="ba3afe12-5c07-4d55-8846-84951e4e7709" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2AbzPn7EvD2aGTwa85HHwjYZdEy" />
+  <component name="ProjectId" id="2AgPW6qZJkI3SWfnp4qkehDscLu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,17 +20,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/NTC/Documents/GitHub/Dacelty.github.io/java-core/day_06/BTsach"
+    "last_opened_file_path": "C:/Users/NTC/Documents/GitHub/Dacelty.github.io/java-core/day_06/BT"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fa630c72-0b55-4ae8-90f1-4fcc21d15a9d" name="Changes" comment="" />
-      <created>1655293054352</created>
+      <changelist id="ba3afe12-5c07-4d55-8846-84951e4e7709" name="Changes" comment="" />
+      <created>1655428283651</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1655293054352</updated>
+      <updated>1655428283651</updated>
     </task>
     <servers />
   </component>
