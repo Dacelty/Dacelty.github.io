@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
 public class Employee {
-    public int id;
+    public String id;
     public String name;
     public LocalDate dob;
     public Gender gender;
@@ -12,7 +12,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(int id, String name, LocalDate dob, Gender gender, String mobile, String email, String address) {
+    public Employee(String id, String name, LocalDate dob, Gender gender, String mobile, String email, String address) {
         this.id = id;
         this.name = name;
         this.dob = dob;
