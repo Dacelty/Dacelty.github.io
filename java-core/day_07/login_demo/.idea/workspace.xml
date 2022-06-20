@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74be333b-418c-4f76-80b1-9c904e11bf50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KT1/KT1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_01/day_01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_02/BT1_day02/BT1_day02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_02/BT2_day02/BT2_day02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_02/BTNX_day02/BTNX_day02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_02/DateTimeExample/DateTimeExample.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_02/InputOutput/InputOutput.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_02/day_02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_03/BT01/BT01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_03/BT02/BT02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_03/ForLoop/ForLoop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_03/SwitchCase/SwitchCase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_03/day_03.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_04/day_04.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/BT.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/out/production/BT/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/out/production/BT/BookService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/out/production/BT/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/src/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/src/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/BT/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/day_06.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/demo_person/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/demo_person/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/demo_person/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/demo_person/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/demo_person/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_06/demo_person/demo_person.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day_07.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/Person.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ac7WxORY7cJoTTD7rNm4xi2S3f" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Admin/Documents/GitHub/Dacelty.github.io/java-core/day_08/BT"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74be333b-418c-4f76-80b1-9c904e11bf50" name="Changes" comment="" />
+      <created>1655297056448</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655297056448</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
