@@ -11,6 +11,9 @@ public class Movie extends Film {
         this.length = length;
     }
 
+    public Movie(String s, String abc, String comedy, String s1, LocalDate of) {
+    }
+
     public double getLength() {
         return length;
     }
