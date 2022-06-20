@@ -22,7 +22,7 @@ public class Movie extends Film {
     @Override
     public void myMethod() {
         super.myMethod();
-        System.out.println("Lớp con");
+        System.out.println("Lớp con : Movie");
     }
 
     @Override

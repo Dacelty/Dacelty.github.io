@@ -64,6 +64,6 @@ public class Film {
     }
 
     public void myMethod(){
-        System.out.println("Lớp cha");
+        System.out.println("Lớp cha : Film");
     }
 }

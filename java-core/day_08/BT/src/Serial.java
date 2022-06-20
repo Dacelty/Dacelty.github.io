@@ -32,7 +32,7 @@ public class Serial extends Film {
     @Override
     public void myMethod() {
         super.myMethod();
-        System.out.println("Lớp con");
+        System.out.println("Lớp con : Serial");
     }
 
     @Override
