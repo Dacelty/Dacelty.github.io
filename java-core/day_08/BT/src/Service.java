@@ -66,8 +66,8 @@ public class Service {
         arrSer[1].setGenre("Comedy");
         arrSer[1].setDirector("113");
         arrSer[1].setDob(LocalDate.of(1990,12,3));
-        arrSer[0].setEpisodesCount(3);
-        arrSer[0].setAveragelength(120);
+        arrSer[1].setEpisodesCount(3);
+        arrSer[1].setAveragelength(120);
 
         arrSer[2] = new Serial();
         arrSer[2].setId(3);
@@ -75,8 +75,8 @@ public class Service {
         arrSer[2].setGenre("Comedy");
         arrSer[2].setDirector("113");
         arrSer[2].setDob(LocalDate.of(1990,12,3));
-        arrSer[0].setEpisodesCount(3);
-        arrSer[0].setAveragelength(120);
+        arrSer[2].setEpisodesCount(3);
+        arrSer[2].setAveragelength(120);
 
         arrSer[3] = new Serial();
         arrSer[3].setId(4);
@@ -84,8 +84,8 @@ public class Service {
         arrSer[3].setGenre("Comedy");
         arrSer[3].setDirector("113");
         arrSer[3].setDob(LocalDate.of(1990,12,3));
-        arrSer[0].setEpisodesCount(3);
-        arrSer[0].setAveragelength(120);
+        arrSer[3].setEpisodesCount(3);
+        arrSer[3].setAveragelength(120);
 
         arrSer[4] = new Serial();
         arrSer[4].setId(5);
@@ -93,8 +93,8 @@ public class Service {
         arrSer[4].setGenre("Comedy");
         arrSer[4].setDirector("113");
         arrSer[4].setDob(LocalDate.of(1990,12,3));
-        arrSer[0].setEpisodesCount(3);
-        arrSer[0].setAveragelength(120);
+        arrSer[4].setEpisodesCount(3);
+        arrSer[4].setAveragelength(120);
 
         return  arrSer;
     }

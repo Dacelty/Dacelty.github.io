@@ -5,12 +5,16 @@ public class Main {
         Service s = new Service();
         Scanner scanner = new Scanner(System.in);
 
+        Movie movie = new Movie();
         Movie[] arrMovies = s.getallmovies();
-        System.out.println("Danh sách Movie:");
+        movie.myMethod();
         s.show(arrMovies);
+
         System.out.println();
+
+        Serial serial = new Serial();
         Serial[] arrSer = s.getallserials();
-        System.out.println("Danh sách Serial:");
+        serial.myMethod();
         s.show(arrSer);
 
         System.out.println();

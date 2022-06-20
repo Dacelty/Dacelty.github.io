@@ -28,8 +28,4 @@ public class Movie extends Film {
         System.out.println("Lớp con : Movie");
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + " - " + length;
-    }
 }

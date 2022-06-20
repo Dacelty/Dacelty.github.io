@@ -35,8 +35,4 @@ public class Serial extends Film {
         System.out.println("Lớp con : Serial");
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + " - " + episodesCount + " - " + averagelength;
-    }
 }
