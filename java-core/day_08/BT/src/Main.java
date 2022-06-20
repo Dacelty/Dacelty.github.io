@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println("Nhập tên phim cần tìm:");
         String fName = scanner.nextLine();
-        System.out.println("Phìm cần tìm là:");
+        System.out.println("Phim cần tìm là:");
         s.findMovieByName(arrMovies,fName);
     }
 }
