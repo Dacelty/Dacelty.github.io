@@ -1,20 +1,23 @@
-import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        Movie m1 = new Movie();
-//        m1.myMethod();
-//
-//        m1.setId(1);
-//        m1.setName("ABC");
-//        m1.setGenre("Comedy");
-//        m1.setDirector("113");
-//        m1.setDob(LocalDate.of(1990, 12, 3));
-//
-//        System.out.println(m1);
         Service s = new Service();
+        Scanner scanner = new Scanner(System.in);
+
         Movie[] arrMovies = s.getallmovies();
         System.out.println("Danh sách Movie:");
         s.show(arrMovies);
+        System.out.println();
+        Serial[] arrSer = s.getallserials();
+        System.out.println("Danh sách Serial:");
+        s.show(arrSer);
+
+        System.out.println();
+
+        System.out.println("Nhập tên phim cần tìm:");
+        String fName = scanner.nextLine();
+        System.out.println("Phìm cần tìm là:");
+        s.findMovieByName(arrMovies,fName);
     }
 }
