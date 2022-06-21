@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_06/BT/BT.iml" filepath="$PROJECT_DIR$/java-core/day_06/BT/BT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_03/BT01/BT01.iml" filepath="$PROJECT_DIR$/java-core/day_03/BT01/BT01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_03/BT02/BT02.iml" filepath="$PROJECT_DIR$/java-core/day_03/BT02/BT02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_02/BT1_day02/BT1_day02.iml" filepath="$PROJECT_DIR$/java-core/day_02/BT1_day02/BT1_day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_02/BT2_day02/BT2_day02.iml" filepath="$PROJECT_DIR$/java-core/day_02/BT2_day02/BT2_day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_02/BTNX_day02/BTNX_day02.iml" filepath="$PROJECT_DIR$/java-core/day_02/BTNX_day02/BTNX_day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_07/BTemp/BTemp.iml" filepath="$PROJECT_DIR$/java-core/day_07/BTemp/BTemp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_06/BTsach/BTsach.iml" filepath="$PROJECT_DIR$/java-core/day_06/BTsach/BTsach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Dacelty.github.io.iml" filepath="$PROJECT_DIR$/.idea/Dacelty.github.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_02/DateTimeExample/DateTimeExample.iml" filepath="$PROJECT_DIR$/java-core/day_02/DateTimeExample/DateTimeExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/TatcaBT/Exercise1/Exercise1.iml" filepath="$PROJECT_DIR$/java-core/TatcaBT/Exercise1/Exercise1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_03/ForLoop/ForLoop.iml" filepath="$PROJECT_DIR$/java-core/day_03/ForLoop/ForLoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_02/InputOutput/InputOutput.iml" filepath="$PROJECT_DIR$/java-core/day_02/InputOutput/InputOutput.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/KT1/KT1.iml" filepath="$PROJECT_DIR$/java-core/KT1/KT1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/TatcaBT/Nhapxuat/Nhapxuat.iml" filepath="$PROJECT_DIR$/java-core/TatcaBT/Nhapxuat/Nhapxuat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_03/SwitchCase/SwitchCase.iml" filepath="$PROJECT_DIR$/java-core/day_03/SwitchCase/SwitchCase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/TatcaBT/array/array.iml" filepath="$PROJECT_DIR$/java-core/TatcaBT/array/array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/TatcaBT/ControlFlow/cf1/cf1.iml" filepath="$PROJECT_DIR$/java-core/TatcaBT/ControlFlow/cf1/cf1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/TatcaBT/ControlFlow/cf2/cf2.iml" filepath="$PROJECT_DIR$/java-core/TatcaBT/ControlFlow/cf2/cf2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_01/day_01.iml" filepath="$PROJECT_DIR$/java-core/day_01/day_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_02/day_02.iml" filepath="$PROJECT_DIR$/java-core/day_02/day_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_03/day_03.iml" filepath="$PROJECT_DIR$/java-core/day_03/day_03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_04/day_04.iml" filepath="$PROJECT_DIR$/java-core/day_04/day_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_06/day_06.iml" filepath="$PROJECT_DIR$/java-core/day_06/day_06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_07/day_07.iml" filepath="$PROJECT_DIR$/java-core/day_07/day_07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_08/day_08.iml" filepath="$PROJECT_DIR$/java-core/day_08/day_08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_09/day_09.iml" filepath="$PROJECT_DIR$/java-core/day_09/day_09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_06/demo_person/demo_person.iml" filepath="$PROJECT_DIR$/java-core/day_06/demo_person/demo_person.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/TatcaBT/exerciseQLSach/exerciseQLSach.iml" filepath="$PROJECT_DIR$/java-core/TatcaBT/exerciseQLSach/exerciseQLSach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/TatcaBT/ktso1/ktso1.iml" filepath="$PROJECT_DIR$/java-core/TatcaBT/ktso1/ktso1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/day_07/login_demo/login_demo.iml" filepath="$PROJECT_DIR$/java-core/day_07/login_demo/login_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/TatcaBT/quanlyNhanVien/quanlyNhanVien.iml" filepath="$PROJECT_DIR$/java-core/TatcaBT/quanlyNhanVien/quanlyNhanVien.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/TatcaBT/quanlyPhim/quanlyPhim.iml" filepath="$PROJECT_DIR$/java-core/TatcaBT/quanlyPhim/quanlyPhim.iml" />
+    </modules>
+  </component>
+</project>
