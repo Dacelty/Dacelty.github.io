@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Heaven's Burning",
+    "category": ["Action","Drama"],
+    "author": "Shawn Calvey",
+    "page_number": 61,
+    "release_year": 2009
+  },
+  {
+    "id": 2,
+    "title": "Operator 13",
+    "category": ["Drama","Romance", "War"],
+    "author": "Daisi Richold",
+    "page_number": 131,
+    "release_year": 2009
+  },
+  {
+    "id": 3,
+    "title": "Ghosts... of the Civil Dead",
+    "category": ["Crime","Drama"],
+    "author": "Chauncey Antrobus",
+    "page_number": 154,
+    "release_year": 2004
+  },
+  {
+    "id": 4,
+    "title": "The African",
+    "category": ["Adventure","Comedy"],
+    "author": "Marina Barnicott",
+    "page_number": 142,
+    "release_year": 2007
+  },
+  {
+    "id": 5,
+    "title": "House on Sorority Row, The",
+    "category": ["Horror","Mystery","Thriller"],
+    "author": "Casar Danes",
+    "page_number": 191,
+    "release_year": 2011
+  },
+  {
+    "id": 6,
+    "title": "Bang, Bang, You're Dead",
+    "category": ["Drama"],
+    "author": "Trix Drennan",
+    "page_number": 193,
+    "release_year": 2013
+  },
+  {
+    "id": 7,
+    "title": "The Bone Snatcher",
+    "category": ["Horror","Sci-Fi"],
+    "author": "Beck Sneaker",
+    "page_number": 42,
+    "release_year": 1995
+  },
+  {
+    "id": 8,
+    "title": "Mummy, The",
+    "category": ["Horror"],
+    "author": "Charla Durtnel",
+    "page_number": 76,
+    "release_year": 2006
+  },
+  {
+    "id": 9,
+    "title": "Hope Springs",
+    "category": ["Comedy","Romance"],
+    "author": "Alejandrina Oswell",
+    "page_number": 176,
+    "release_year": 2001
+  },
+  {
+    "id": 10,
+    "title": "Masseurs and a Woman, The (Anma to onna)",
+    "category": ["Drama"],
+    "author": "Iolande Glanville",
+    "page_number": 96,
+    "release_year": 2008
+  }
+]
