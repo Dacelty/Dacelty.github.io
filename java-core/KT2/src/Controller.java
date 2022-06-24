@@ -178,7 +178,7 @@ public class Controller {
                         listUsers.add(newUser);
                         userRegValid = true;
                         System.out.println("Đăng ký thành công.");
-                        System.out.println("Danh sách tài khoảng sau khi đăng ký :");
+                        System.out.println("Danh sách tài khoản sau khi đăng ký :");
                         for (User u : listUsers){
                             System.out.println(u);
                         }
