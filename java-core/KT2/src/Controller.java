@@ -91,7 +91,7 @@ public class Controller {
 
     public User findUserByUsername(String username) {
         for (User u : listUsers) {
-            if (u.getUsername().contains(username)) {
+            if (u.getUsername().equals(username)) {
                 return u;
             }
         }
@@ -100,7 +100,7 @@ public class Controller {
 
     public User findUserByPassword(String password) {
         for (User u : listUsers) {
-            if (u.getPassword().contains(password)) {
+            if (u.getPassword().equals(password)) {
                 return u;
             }
         }
@@ -109,7 +109,7 @@ public class Controller {
 
     public User findUserByEmail(String email) {
         for (User u : listUsers) {
-            if (u.getEmail().contains(email)) {
+            if (u.getEmail().equals(email)) {
                 return u;
             }
         }
