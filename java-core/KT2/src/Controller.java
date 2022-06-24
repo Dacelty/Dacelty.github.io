@@ -171,7 +171,7 @@ public class Controller {
                 System.out.println("Nhập password : ");
                 String newPassword = scanner.nextLine();
                 if (Validator.isValidPasswordReg(newPassword)) {
-                    System.out.println("Nhập email :");
+                    System.out.println("Nhập email : ");
                     String newEmail = scanner.nextLine();
                     if (Validator.isValidEmailReg(listUsers, newEmail)) {
                         User newUser = new User(newUsername, newPassword, newEmail);
