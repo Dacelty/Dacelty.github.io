@@ -1,7 +1,6 @@
 
 public class Util {
     public static void menuDNDK(){
-        System.out.println("Bạn có thể thực hiện: ");
         System.out.println("1 - Đăng nhập");
         System.out.println("2 - Đăng kí");
     }
