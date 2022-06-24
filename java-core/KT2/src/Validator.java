@@ -39,7 +39,7 @@ public class Validator {
 
     public static boolean isValidEmail(String email){
         boolean isValid = true;
-        String regex = "^[a-z][a-z0-9_\\.]{5,32}@[a-z0-9]{2,}(\\.[a-z0-9]{2,4}){1,2}$";
+        String regex = "^^(.+)@(.+)$";
         if (!email.matches(regex)){
             System.out.println("\"Email không hợp lệ");
             isValid = false;
@@ -59,7 +59,7 @@ public class Validator {
 
     public static boolean isValidEmailReg(ArrayList<User> list, String email){
         boolean isValid = true;
-        String regex = "^[a-z][a-z0-9_\\.]{5,32}@[a-z0-9]{2,}(\\.[a-z0-9]{2,4}){1,2}$";
+        String regex = "^(.+)@(.+)$";
         for (User u : list){
             if (u.getEmail().equals(email) || !email.matches(regex)){
                 isValid = false;

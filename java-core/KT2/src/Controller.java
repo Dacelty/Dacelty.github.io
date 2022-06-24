@@ -183,7 +183,7 @@ public class Controller {
                             System.out.println(u);
                         }
                     } else {
-                        System.out.println("Email không hợp lệ.");
+                        System.out.println("Email không hợp lệ hoặc đã được đăng ký.");
                     }
                 } else {
                     System.out.println("Password không hợp lệ.");

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7203acaa-33c7-4c99-9186-8c2fe66f6ea2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/KT2/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KT2/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KT2/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KT2/Validator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
