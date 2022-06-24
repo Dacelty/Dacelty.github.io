@@ -47,6 +47,13 @@ public class Controller {
                         } else {
                             Util.menuSMK();
                             int choose3 = Integer.parseInt(scanner.nextLine());
+                            switch (choose3)
+                            {
+                                case 1:
+                                    break;
+                                case 2:
+                                    quenMatKhau();
+                            }
                         }
                     } else {
                         System.out.println("Kiểm tra lại username.");
@@ -94,6 +101,15 @@ public class Controller {
     public User findUserByPassword(String password) {
         for (User u : listUsers) {
             if (u.getPassword().contains(password)) {
+                return u;
+            }
+        }
+        return null;
+    }
+
+    public User findUserByEmail(String email) {
+        for (User u : listUsers) {
+            if (u.getEmail().contains(email)) {
                 return u;
             }
         }
@@ -159,6 +175,29 @@ public class Controller {
 
     public void updateEmail(User user, String newEmail) {
         user.setEmail(newEmail);
+    }
+
+    public void quenMatKhau(){
+        System.out.println("Nhập email :");
+        String validEmail = scanner.nextLine();
+        User u = findUserByEmail(validEmail);
+        if(u != null){
+            System.out.println("Tìm thấy tài khoản.");
+            System.out.println(u);
+            System.out.println("Thay đổi password.");
+            System.out.println("Nhập password mới: ");
+            String newPassword = scanner.nextLine();
+            if (Validator.isValidPasswordReg(newPassword)) {
+                updatePassword(u, newPassword);
+                System.out.println("Thay đổi password mới thành công.");
+                System.out.println("Thông tin sau khi cập nhật: ");
+                System.out.println(u);
+            } else {
+                System.out.println("Password không hợp lệ.");
+            }
+        }else {
+            System.out.println("Tài khoản không tồn tại");
+        }
     }
 
     public void createNewUser() {
