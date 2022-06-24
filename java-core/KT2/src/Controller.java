@@ -25,7 +25,7 @@ public class Controller {
                         System.out.print("Nhập mật khẩu : ");
                         String password = scanner.nextLine();
                         if (isValidPWLogin(password)) {
-                            System.out.println("Đăng nhập thành công");
+                            System.out.println("Đăng nhập thành công!");
                             System.out.println("Chào mừng " + username + ", bạn có thể thực hiện các công việc sau:");
                             Util.menuDNTK();
                             int choose2 = Integer.parseInt(scanner.nextLine());
