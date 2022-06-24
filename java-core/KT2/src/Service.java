@@ -8,9 +8,6 @@ public class Service {
         return list;
     }
 
-    public void addNewUser(ArrayList<User> list,User user) {
-        list.add(user);
-    }
 
 
 
