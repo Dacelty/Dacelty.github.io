@@ -126,7 +126,7 @@ public class Controller {
         if (Validator.isValidUsernameReg(listUsers, newUsername)) {
             updateUsername(u, newUsername);
             System.out.println("Thay đổi username thành công.");
-            System.out.println("Thông tin sau khi cập nhật: ");
+            System.out.println("Thông tin sau khi cập nhật : ");
             System.out.println(u);
         } else {
             System.out.println("Username đã tồn tại.");
@@ -143,7 +143,7 @@ public class Controller {
         if (Validator.isValidPasswordReg(newPassword)) {
             updatePassword(u, newPassword);
             System.out.println("Thay đổi password mới thành công.");
-            System.out.println("Thông tin sau khi cập nhật: ");
+            System.out.println("Thông tin sau khi cập nhật : ");
             System.out.println(u);
         } else {
             System.out.println("Password không hợp lệ.");
@@ -158,7 +158,7 @@ public class Controller {
         if (Validator.isValidEmail(newEmail)) {
             updateEmail(u, newEmail);
             System.out.println("Thay đổi email thành công.");
-            System.out.println("Thông tin sau khi cập nhật: ");
+            System.out.println("Thông tin sau khi cập nhật : ");
             System.out.println(u);
         } else {
             System.out.println("Email không hợp lệ.");
@@ -182,21 +182,21 @@ public class Controller {
         String validEmail = scanner.nextLine();
         User u = findUserByEmail(validEmail);
         if(u != null){
-            System.out.println("Tìm thấy tài khoản.");
-            System.out.println(u);
+            System.out.print("Tìm thấy tài khoản có username là : ");
+            System.out.println(u.getUsername());
             System.out.println("Thay đổi password.");
-            System.out.println("Nhập password mới: ");
+            System.out.println("Nhập password mới : ");
             String newPassword = scanner.nextLine();
             if (Validator.isValidPasswordReg(newPassword)) {
                 updatePassword(u, newPassword);
                 System.out.println("Thay đổi password mới thành công.");
-                System.out.println("Thông tin sau khi cập nhật: ");
+                System.out.println("Thông tin sau khi cập nhật : ");
                 System.out.println(u);
             } else {
                 System.out.println("Password không hợp lệ.");
             }
         }else {
-            System.out.println("Tài khoản không tồn tại");
+            System.out.println("Tài khoản không tồn tại hoặc sai email.");
         }
     }
 
