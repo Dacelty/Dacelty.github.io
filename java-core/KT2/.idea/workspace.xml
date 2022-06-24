@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7203acaa-33c7-4c99-9186-8c2fe66f6ea2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KT2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TatcaBT/exerciseQLSach/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TatcaBT/exerciseQLSach/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KT2/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KT2/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KT2/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KT2/Validator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

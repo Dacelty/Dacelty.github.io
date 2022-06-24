@@ -171,12 +171,17 @@ public class Controller {
                 System.out.println("Nhập password : ");
                 String newPassword = scanner.nextLine();
                 if (Validator.isValidPasswordReg(newPassword)) {
-                    System.out.println("Nhập email");
+                    System.out.println("Nhập email :");
                     String newEmail = scanner.nextLine();
-                    if (Validator.isValidEmail(newEmail)) {
+                    if (Validator.isValidEmailReg(listUsers, newEmail)) {
                         User newUser = new User(newUsername, newPassword, newEmail);
                         listUsers.add(newUser);
                         userRegValid = true;
+                        System.out.println("Đăng ký thành công.");
+                        System.out.println("Danh sách tài khoảng sau khi đăng ký :");
+                        for (User u : listUsers){
+                            System.out.println(u);
+                        }
                     } else {
                         System.out.println("Email không hợp lệ.");
                     }
