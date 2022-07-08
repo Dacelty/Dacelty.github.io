@@ -18,8 +18,8 @@ public class LichSuGiaoDich extends User{
         this.tkDich = tkDich;
     }
 
-    public LichSuGiaoDich(String phoneNumber, String password, long soDu, String lyDo, LocalDate ngayCT, long soTienDuocChuyen, String tkDich) {
-        super(phoneNumber, password, soDu);
+    public LichSuGiaoDich(String phoneNumber, String soTK, String password, long soDu, String lyDo, LocalDate ngayCT, long soTienDuocChuyen, String tkDich) {
+        super(phoneNumber, soTK, password, soDu);
         this.lyDo = lyDo;
         this.ngayCT = ngayCT;
         this.soTienDuocChuyen = soTienDuocChuyen;

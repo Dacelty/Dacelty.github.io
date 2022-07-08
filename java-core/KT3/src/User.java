@@ -1,14 +1,17 @@
 public class User {
     private String phoneNumber;
+    private String soTK;
     private String password;
+
 
     private long soDu;
 
     public User() {
     }
 
-    public User(String phoneNumber, String password, long soDu) {
+    public User(String phoneNumber, String soTK, String password, long soDu) {
         this.phoneNumber = phoneNumber;
+        this.soTK = soTK;
         this.password = password;
         this.soDu = soDu;
     }
@@ -19,6 +22,14 @@ public class User {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getSoTK() {
+        return soTK;
+    }
+
+    public void setSoTK(String soTK) {
+        this.soTK = soTK;
     }
 
     public String getPassword() {
@@ -39,6 +50,6 @@ public class User {
 
     @Override
     public String toString() {
-        return phoneNumber + " - " + password + " - " + soDu;
+        return soTK + "-" + phoneNumber + " - " + password + " - " + soDu;
     }
 }

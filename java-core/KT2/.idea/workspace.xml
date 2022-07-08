@@ -7,13 +7,13 @@
       <change afterPath="$PROJECT_DIR$/../KT3/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../KT3/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../KT3/KT3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/src/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/src/LichSuGiaoDich.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../KT3/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/src/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/src/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../KT3/src/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KT3/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KT3/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KT3/src/LichSuGiaoDich.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KT3/src/LichSuGiaoDich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KT3/src/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KT3/src/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KT3/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KT3/src/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TatcaBT/movieGeneric/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TatcaBT/movieGeneric/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TatcaBT/quanlyPhim/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TatcaBT/quanlyPhim/src/Movie.java" afterDir="false" />
     </list>

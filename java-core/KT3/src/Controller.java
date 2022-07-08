@@ -64,6 +64,16 @@ public class Controller {
         return isValid;
     }
 
+    public static boolean isValidsoTK(String pNumber) {
+        boolean isValid = false;
+
+        for (User u : listUsers) {
+            if (Objects.equals(u.getSoTK(), pNumber)) {
+                isValid = true;
+            }
+        }
+        return isValid;
+    }
     public static boolean isValidPWLogin(String password) {
         boolean isValid = false;
 
@@ -84,6 +94,15 @@ public class Controller {
         return null;
     }
 
+    public User findUserBySoTK(String pNumber) {
+        for (User u : listUsers) {
+            if (u.getSoTK().equals(pNumber)) {
+                return u;
+            }
+        }
+        return null;
+    }
+
     public LichSuGiaoDich findUserLSDDByPhoneNumber(String pNumber) {
         for (LichSuGiaoDich uLSDD : listLSDD) {
             if (uLSDD.getPhoneNumber().equals(pNumber)) {
@@ -98,7 +117,7 @@ public class Controller {
     public void truyXuatSoDu(String pNumber){
         User u = findUserByPhoneNumber(pNumber);
         long soDuTK = u.getSoDu();
-        System.out.println("Số dư hiện tại của TK " +pNumber+ " là " +soDuTK);
+        System.out.println("Số dư hiện tại của TK " +u.getSoTK()+ " là " +soDuTK);
     }
 
     public void chuyenTien(String pNumber, String password){
@@ -109,7 +128,7 @@ public class Controller {
         String pNumber2 = scanner.nextLine();
         if (pNumber2.length()<8 || pNumber2.length()>16){
             System.out.println("Số tài khoản là các số gồm từ 8 đến 16 ký tự.");
-        } else if (isValidUsernameLogin(pNumber2)){
+        } else if (isValidsoTK(pNumber2)){
             System.out.println("Nhập lượng tiền cần chuyển:");
             long soTienDuocChuyen = Long.parseLong(scanner.nextLine());
             if (soTienDuocChuyen<50000){
@@ -122,7 +141,7 @@ public class Controller {
             } else {
                 System.out.println("Nhập lý do chuyển khoản");
                 String lyDo = scanner.nextLine();
-                User u2 = findUserByPhoneNumber(pNumber2);
+                User u2 = findUserBySoTK(pNumber2);
 
                 System.out.println("Số dư của TK đích trước khi chuyển khoản là " +u2.getSoDu());
                 u2.setSoDu(u2.getSoDu()+soTienDuocChuyen);
@@ -131,7 +150,7 @@ public class Controller {
                 System.out.println("Số dư của TK đích sau khi chuyển khoản là " +u2.getSoDu());
 
                 LocalDate ngayCT = LocalDate.now();
-                LichSuGiaoDich lsdd = new LichSuGiaoDich(pNumber,password,u.getSoDu(),lyDo,ngayCT,soTienDuocChuyen,u2.getPhoneNumber());
+                LichSuGiaoDich lsdd = new LichSuGiaoDich(pNumber,password,u.getSoTK(),u.getSoDu(),lyDo,ngayCT,soTienDuocChuyen,u2.getSoTK());
                 listLSDD.add(lsdd);
 
                 u.setSoDu(u.getSoDu()-soTienDuocChuyen);
