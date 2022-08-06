@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList listStudent;
+        ArrayList<Student> listStudent;
         studentService s = new studentService();
         Scanner scanner = new Scanner(System.in);
 
@@ -24,12 +24,11 @@ public class Main {
             System.out.println();
             int choose = Integer.parseInt(scanner.nextLine());
             switch (choose) {
-                case 1:
-
+                case 1 -> {
                     listStudent.sort((Comparator<Student>) (o1, o2) -> {
-                        if(!o1.getFullName().equals(o2.getFullName())){
+                        if (!o1.getFullName().equals(o2.getFullName())) {
                             return o1.getFullName().compareTo(o2.getFullName());
-                        }else{
+                        } else {
                             return o2.getAge() - o1.getAge();
                         }
                     });
@@ -38,12 +37,12 @@ public class Main {
                         System.out.println(stu);
                     }
                     System.out.println();
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     listStudent.sort((Comparator<Student>) (o1, o2) -> {
-                        if(!(o1.getAge()==o2.getAge())){
+                        if (!(o1.getAge() == o2.getAge())) {
                             return o1.getAge() - o2.getAge();
-                        }else{
+                        } else {
                             return o2.getGpa() - o1.getGpa();
                         }
                     });
@@ -52,17 +51,16 @@ public class Main {
                         System.out.println(stu);
                     }
                     System.out.println();
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     listStudent.sort(Comparator.comparing(Student::getFirstName));
                     System.out.println("Danh sách sau khi sắp xếp: ");
                     for (Object stu : listStudent) {
                         System.out.println(stu);
                     }
                     System.out.println();
-                    break;
-                case 4:
-                    System.exit(0);
+                }
+                case 4 -> System.exit(0);
             }
         }
 
