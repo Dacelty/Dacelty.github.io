@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7203acaa-33c7-4c99-9186-8c2fe66f6ea2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../KT3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/KT3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KT3/src/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KT3/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KT3/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KT3/src/LichSuGiaoDich.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KT3/src/LichSuGiaoDich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KT3/src/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KT3/src/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KT3/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KT3/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TatcaBT/movieGeneric/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TatcaBT/movieGeneric/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TatcaBT/quanlyPhim/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TatcaBT/quanlyPhim/src/Movie.java" afterDir="false" />
-    </list>
+    <list default="true" id="7203acaa-33c7-4c99-9186-8c2fe66f6ea2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/NTC/Documents/GitHub/Dacelty.github.io/java-core/KT2"
+    "last_opened_file_path": "C:/Users/NTC/Documents/GitHub/Dacelty.github.io/java-core/KT1"
   }
 }]]></component>
   <component name="RunManager">
@@ -94,11 +79,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Controller.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
