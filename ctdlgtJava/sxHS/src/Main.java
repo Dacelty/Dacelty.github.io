@@ -25,7 +25,7 @@ public class Main {
             int choose = Integer.parseInt(scanner.nextLine());
             switch (choose) {
                 case 1 -> {
-                    listStudent.sort((Comparator<Student>) (o1, o2) -> {
+                    listStudent.sort((o1, o2) -> {
                         if (!o1.getFullName().equals(o2.getFullName())) {
                             return o1.getFullName().compareTo(o2.getFullName());
                         } else {
@@ -39,7 +39,7 @@ public class Main {
                     System.out.println();
                 }
                 case 2 -> {
-                    listStudent.sort((Comparator<Student>) (o1, o2) -> {
+                    listStudent.sort((o1, o2) -> {
                         if (!(o1.getAge() == o2.getAge())) {
                             return o1.getAge() - o2.getAge();
                         } else {
