@@ -18,8 +18,6 @@ public class SpringbookApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SpringbookApplication.class, args);
-
-		Book book = context.getBean(Book.class);
 		
 		Gson gson = new Gson();
 		ArrayList<Book> list = new ArrayList();
