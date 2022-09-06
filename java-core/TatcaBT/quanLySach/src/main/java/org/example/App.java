@@ -46,7 +46,7 @@ public class App
         while (true){
             Util.menu();
             System.out.println("Lựa chọn của bạn là: ");
-            int choose = Integer.parseInt(scanner.nextLine());
+                int choose = Integer.parseInt(scanner.nextLine());
 
             switch (choose){
                 case 1:
