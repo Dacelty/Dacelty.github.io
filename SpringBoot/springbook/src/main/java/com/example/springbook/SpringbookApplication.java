@@ -19,6 +19,7 @@ public class SpringbookApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SpringbookApplication.class, args);
 		
+		Book book = context.getBean(Book.class);
 		Gson gson = new Gson();
 		ArrayList<Book> list = new ArrayList();
 		Service s = new Service();
@@ -30,9 +31,12 @@ public class SpringbookApplication {
 			    System.out.println(type);
 				System.out.println("Doc du lieu tu JSON thanh cong.");
 			    list = (ArrayList)gson.fromJson(reader, type);
+				book = gson.fromJson(reader, Book.class);
 			} catch (FileNotFoundException var6) {
 			    System.out.println("Sai duong dan file.");
 			}
+
+			System.out.println("Instance Book : " +book);
 
 			System.out.println();
 
