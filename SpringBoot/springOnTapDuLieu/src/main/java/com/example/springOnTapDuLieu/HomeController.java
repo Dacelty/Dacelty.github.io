@@ -63,10 +63,29 @@ public class HomeController {
         return repo.natSoLuongMap();
     }
 
+    @GetMapping(value = "/natSLMAP/asc", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Map<String, Long> hienthiNatSoLuongMAPAsc(){
+        return repo.sxjsMapAsc();
+    }
+
+    @GetMapping(value = "/natSLMAP/desc", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Map<String, Long> hienthiNatSoLuongMAPDesc(){
+        return repo.sxjsMapDesc();
+    }
+
     @GetMapping(value = "/natSLList", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<jsonArrayList> hienthiNatSoLuongList(){
         return repo.natSoLuongList();
     }
 
+    @GetMapping(value = "/natSLList/asc", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<jsonArrayList> hienthiNatSoLuongListAsc(){
+        return repo.sxjsListAsc();
+    }
+
+    @GetMapping(value = "/natSLList/desc", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<jsonArrayList> hienthiNatSoLuongListDesc(){
+        return repo.sxjsListDesc();
+    }
 
 }

@@ -8,10 +8,14 @@ import org.springframework.util.ResourceUtils;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Repository
 public class Repo {
     private ArrayList<Person> per =new ArrayList<Person>();
+    private Map<String,Long> jsonArrayMap = new HashMap<String,Long>();
+    private List<jsonArrayList> jsAL = new ArrayList<jsonArrayList>();
 
 
     public ArrayList<Person> Repo(){
@@ -134,7 +138,6 @@ public class Repo {
         }
 
         //xuất ra màn hình output và return map để xuất ra json
-        Map<String,Long> jsonArrayMap = new HashMap<String,Long>();
         System.out.println("---------------------------------------");
         System.out.println(" Element | Frequency");
         System.out.println("---------------------------------------");
@@ -150,6 +153,28 @@ public class Repo {
             System.out.println(entry.getKey() + " - " +entry.getValue());
         }
         return jsonArrayMap;
+    }
+
+    public Map<String, Long> sxjsMapAsc(){
+
+        Map<String, Long> result = jsonArrayMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                        (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+        System.out.println(result);
+        return result;
+
+    }
+
+    public Map<String, Long> sxjsMapDesc(){
+
+        Map<String, Long> result = jsonArrayMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                        (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+        System.out.println(result);
+        return result;
+
     }
 
     public List<jsonArrayList> natSoLuongList(){
@@ -170,7 +195,6 @@ public class Repo {
         }
 
         //xuất ra màn hình output và return map để xuất ra json
-        List<jsonArrayList> jsAL = new ArrayList<jsonArrayList>();
         System.out.println("---------------------------------------");
         System.out.println(" Element | Frequency");
         System.out.println("---------------------------------------");
@@ -186,4 +210,34 @@ public class Repo {
         }
         return jsAL;
     }
+
+    public List<jsonArrayList> sxjsListAsc(){
+        Collections.sort(jsAL, new Comparator<jsonArrayList>() {
+            @Override
+            public int compare(jsonArrayList o1, jsonArrayList o2) {
+                return (int) (o1.getFreq() - o2.getFreq());
+            }
+        });
+        for (jsonArrayList j:jsAL){
+            System.out.println(j.getNationality() + " - " + j.getFreq());
+        }
+        System.out.println("Sort thành công.");
+        return jsAL;
+    }
+
+    public List<jsonArrayList> sxjsListDesc(){
+        Collections.sort(jsAL, new Comparator<jsonArrayList>() {
+            @Override
+            public int compare(jsonArrayList o1, jsonArrayList o2) {
+                return (int) (o2.getFreq() - o1.getFreq());
+            }
+        });
+        for (jsonArrayList j:jsAL){
+            System.out.println(j.getNationality() + " - " + j.getFreq());
+        }
+        System.out.println("Sort thành công.");
+        return jsAL;
+    }
+
+
 }
