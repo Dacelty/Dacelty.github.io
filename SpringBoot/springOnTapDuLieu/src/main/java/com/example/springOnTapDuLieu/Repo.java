@@ -23,7 +23,7 @@ public class Repo {
             File file = ResourceUtils.getFile("src/main/resources/MOCK_DATA.json");
             ObjectMapper mapper = new ObjectMapper();
             per.addAll(mapper.readValue(file, new TypeReference<List<Person>>() {}));
-//            car.forEach(System.out::println);
+
             for (Person p:per){
                 System.out.println(p.getName() + " - " + p.getNationality() + " - " + p.getAge());
             }
@@ -161,7 +161,9 @@ public class Repo {
                 .sorted(Map.Entry.comparingByValue())
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                         (oldValue, newValue) -> oldValue, LinkedHashMap::new));
-        System.out.println(result);
+        for(Map.Entry<String, Long> entry : result.entrySet()){
+            System.out.println(entry.getKey() + " - " +entry.getValue());
+        }
         return result;
 
     }
@@ -172,7 +174,9 @@ public class Repo {
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                         (oldValue, newValue) -> oldValue, LinkedHashMap::new));
-        System.out.println(result);
+        for(Map.Entry<String, Long> entry : result.entrySet()){
+            System.out.println(entry.getKey() + " - " +entry.getValue());
+        }
         return result;
 
     }
@@ -194,7 +198,7 @@ public class Repo {
                 fr[i] = count;
         }
 
-        //xuất ra màn hình output và return map để xuất ra json
+        //xuất ra màn hình output và return list để xuất ra json
         System.out.println("---------------------------------------");
         System.out.println(" Element | Frequency");
         System.out.println("---------------------------------------");
