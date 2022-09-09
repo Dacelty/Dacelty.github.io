@@ -148,10 +148,7 @@ public class Repo {
             }
         }
         System.out.println("----------------------------------------");
-
-        for(Map.Entry<String, Long> entry : jsonArrayMap.entrySet()){
-            System.out.println(entry.getKey() + " - " +entry.getValue());
-        }
+        System.out.println(jsonArrayMap);
         return jsonArrayMap;
     }
 
@@ -161,9 +158,7 @@ public class Repo {
                 .sorted(Map.Entry.comparingByValue())
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                         (oldValue, newValue) -> oldValue, LinkedHashMap::new));
-        for(Map.Entry<String, Long> entry : result.entrySet()){
-            System.out.println(entry.getKey() + " - " +entry.getValue());
-        }
+        System.out.println(jsonArrayMap);
         return result;
 
     }
@@ -174,9 +169,7 @@ public class Repo {
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                         (oldValue, newValue) -> oldValue, LinkedHashMap::new));
-        for(Map.Entry<String, Long> entry : result.entrySet()){
-            System.out.println(entry.getKey() + " - " +entry.getValue());
-        }
+        System.out.println(jsonArrayMap);
         return result;
 
     }
