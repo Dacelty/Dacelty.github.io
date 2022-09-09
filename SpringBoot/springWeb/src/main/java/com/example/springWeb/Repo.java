@@ -26,18 +26,19 @@ public class Repo {
             ObjectMapper mapper = new ObjectMapper();
             car.addAll(mapper.readValue(file, new TypeReference<List<Car>>() {}));
 //            car.forEach(System.out::println);
-            for (Car c:car){
-                System.out.println(c.getBrand() + " - " + c.getModel());
-            }
+//            for (Car c:car){
+//                System.out.println(c.getBrand() + " - " + c.getModel());
+//            }
+            System.out.println("Đọc dữ liệu từ file thành công.");
             return car;
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (StreamReadException e) {
-            throw new RuntimeException(e);
-        } catch (DatabindException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    public void getAllCar(){
+        for (Car c:car){
+            System.out.println(c.getBrand() + " - " + c.getModel());
         }
     }
 }

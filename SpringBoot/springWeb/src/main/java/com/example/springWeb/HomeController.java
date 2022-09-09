@@ -28,6 +28,11 @@ public class HomeController {
         return new Animal("mammal","dog");
     }
 
+    @GetMapping(value = "/json", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Animal getMAP(){
+        return new Animal("mammal","dog");
+    }
+
     @GetMapping(value = "/jsonArray", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Animal> getJSONarray(){
         ArrayList<Animal> animals = new ArrayList<>();
@@ -39,6 +44,11 @@ public class HomeController {
     @GetMapping(value = "/jsonCar")
     public ArrayList<Car> getJSONCar(){
         return repo.Repo();
+    }
+
+    @GetMapping(value = "/jsonCarAll")
+    public void getAllCars(){
+        repo.getAllCar();
     }
 
 

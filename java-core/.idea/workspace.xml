@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59625d6a-e1ec-4ff7-be0b-bf33a378fbb3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-core.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/springWeb/src/main/java/com/example/springWeb/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/springWeb/src/main/java/com/example/springWeb/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/springWeb/src/main/java/com/example/springWeb/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/springWeb/src/main/java/com/example/springWeb/Repo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/NTC/Documents/GitHub/Dacelty.github.io/java-core",
+    "last_opened_file_path": "C:/Users/NTC/Documents/GitHub/Dacelty.github.io/SpringBoot/springOnTapDuLieu",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
