@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59625d6a-e1ec-4ff7-be0b-bf33a378fbb3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../SpringBoot/springWeb/src/main/java/com/example/springWeb/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/springWeb/src/main/java/com/example/springWeb/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot/springWeb/src/main/java/com/example/springWeb/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/springWeb/src/main/java/com/example/springWeb/Repo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/springOnTapDuLieu/src/main/java/com/example/springOnTapDuLieu/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/springOnTapDuLieu/src/main/java/com/example/springOnTapDuLieu/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/springOnTapDuLieu/src/main/java/com/example/springOnTapDuLieu/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/springOnTapDuLieu/src/main/java/com/example/springOnTapDuLieu/Repo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot/springOnTapDuLieu/src/main/java/com/example/springOnTapDuLieu/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

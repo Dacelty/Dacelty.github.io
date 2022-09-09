@@ -7,14 +7,12 @@ import org.springframework.util.ResourceUtils;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 @Repository
 public class Repo {
     private ArrayList<Person> per =new ArrayList<Person>();
+
 
     public ArrayList<Person> Repo(){
         try {
@@ -31,6 +29,7 @@ public class Repo {
             throw new RuntimeException(e);
         }
     }
+
 
     public ArrayList<Person> sxTheoNameAsc(){
         Collections.sort(per, new Comparator<Person>() {
@@ -114,5 +113,77 @@ public class Repo {
         }
         System.out.println("Sort thành công.");
         return per;
+    }
+
+    public Map<String, Long> natSoLuongMap(){
+
+        //đếm số lần xuất hiện của từng element
+        int [] fr = new int [per.size()];
+        int visited = -1;
+        for(int i = 0; i < per.size(); i++){
+            int count = 1;
+            for(int j = i+1; j < per.size(); j++){
+                if(Objects.equals(per.get(i).getNationality(), per.get(j).getNationality())){
+                    count++;
+                    //To avoid counting same element again
+                    fr[j] = visited;
+                }
+            }
+            if(fr[i] != visited)
+                fr[i] = count;
+        }
+
+        //xuất ra màn hình output và return map để xuất ra json
+        Map<String,Long> jsonArrayMap = new HashMap<String,Long>();
+        System.out.println("---------------------------------------");
+        System.out.println(" Element | Frequency");
+        System.out.println("---------------------------------------");
+        for(int i = 0; i < fr.length; i++){
+            if(fr[i] != visited){
+                System.out.println("    " + per.get(i).getNationality() + "    |    " + fr[i]);
+                jsonArrayMap.put(per.get(i).getNationality(), (long) fr[i]);
+            }
+        }
+        System.out.println("----------------------------------------");
+
+        for(Map.Entry<String, Long> entry : jsonArrayMap.entrySet()){
+            System.out.println(entry.getKey() + " - " +entry.getValue());
+        }
+        return jsonArrayMap;
+    }
+
+    public List<jsonArrayList> natSoLuongList(){
+        //đếm số lần xuất hiện của từng element
+        int [] fr = new int [per.size()];
+        int visited = -1;
+        for(int i = 0; i < per.size(); i++){
+            int count = 1;
+            for(int j = i+1; j < per.size(); j++){
+                if(Objects.equals(per.get(i).getNationality(), per.get(j).getNationality())){
+                    count++;
+                    //To avoid counting same element again
+                    fr[j] = visited;
+                }
+            }
+            if(fr[i] != visited)
+                fr[i] = count;
+        }
+
+        //xuất ra màn hình output và return map để xuất ra json
+        List<jsonArrayList> jsAL = new ArrayList<jsonArrayList>();
+        System.out.println("---------------------------------------");
+        System.out.println(" Element | Frequency");
+        System.out.println("---------------------------------------");
+        for(int i = 0; i < fr.length; i++){
+            if(fr[i] != visited){
+                System.out.println("    " + per.get(i).getNationality() + "    |    " + fr[i]);
+                jsAL.add(new jsonArrayList(per.get(i).getNationality(),fr[i]));
+            }
+        }
+        System.out.println("----------------------------------------");
+        for (jsonArrayList j:jsAL){
+            System.out.println(j.getNationality() + " - " + j.getFreq());
+        }
+        return jsAL;
     }
 }

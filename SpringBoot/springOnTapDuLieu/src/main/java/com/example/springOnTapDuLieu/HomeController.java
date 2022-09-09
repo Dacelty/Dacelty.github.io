@@ -1,9 +1,12 @@
 package com.example.springOnTapDuLieu;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -53,6 +56,16 @@ public class HomeController {
                 return null;
         }
 
+    }
+
+    @GetMapping(value = "/natSLMAP", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Map<String, Long> hienthiNatSoLuongMAP(){
+        return repo.natSoLuongMap();
+    }
+
+    @GetMapping(value = "/natSLList", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<jsonArrayList> hienthiNatSoLuongList(){
+        return repo.natSoLuongList();
     }
 
 
