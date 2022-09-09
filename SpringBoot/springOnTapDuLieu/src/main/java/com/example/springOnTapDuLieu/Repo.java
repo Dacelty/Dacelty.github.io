@@ -99,7 +99,7 @@ public class Repo {
             for(int j = i+1; j < per.size(); j++){
                 if(Objects.equals(per.get(i).getNationality(), per.get(j).getNationality())){
                     count++;
-                    //To avoid counting same element again
+                    //đánh dấu là đã đếm/visited
                     fr[j] = visited;
                 }
             }
@@ -153,7 +153,7 @@ public class Repo {
             for(int j = i+1; j < per.size(); j++){
                 if(Objects.equals(per.get(i).getNationality(), per.get(j).getNationality())){
                     count++;
-                    //To avoid counting same element again
+                    //đánh dấu là đã đếm/visited
                     fr[j] = visited;
                 }
             }
