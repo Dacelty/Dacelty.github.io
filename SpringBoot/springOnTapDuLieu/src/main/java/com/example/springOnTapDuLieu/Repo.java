@@ -36,12 +36,7 @@ public class Repo {
 
 
     public ArrayList<Person> sxTheoNameAsc(){
-        Collections.sort(per, new Comparator<Person>() {
-            @Override
-            public int compare(Person o1, Person o2) {
-                return o1.getName().compareTo(o2.getName());
-            }
-        });
+        per.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
         for (Person p:per){
             System.out.println(p.getName() + " - " + p.getNationality() + " - " + p.getAge());
         }
@@ -50,12 +45,7 @@ public class Repo {
     }
 
     public ArrayList<Person> sxTheoNameDesc(){
-        Collections.sort(per, new Comparator<Person>() {
-            @Override
-            public int compare(Person o1, Person o2) {
-                return o2.getName().compareTo(o1.getName());
-            }
-        });
+        per.sort((o1, o2) -> o2.getName().compareTo(o1.getName()));
         for (Person p:per){
             System.out.println(p.getName() + " - " + p.getNationality() + " - " + p.getAge());
         }
@@ -64,12 +54,7 @@ public class Repo {
     }
 
     public ArrayList<Person> sxTheoNatAsc(){
-        Collections.sort(per, new Comparator<Person>() {
-            @Override
-            public int compare(Person o1, Person o2) {
-                return o1.getNationality().compareTo(o2.getNationality());
-            }
-        });
+        per.sort((o1, o2) -> o1.getNationality().compareTo(o2.getNationality()));
         for (Person p:per){
             System.out.println(p.getName() + " - " + p.getNationality() + " - " + p.getAge());
         }
@@ -78,12 +63,7 @@ public class Repo {
     }
 
     public ArrayList<Person> sxTheoNatDesc(){
-        Collections.sort(per, new Comparator<Person>() {
-            @Override
-            public int compare(Person o1, Person o2) {
-                return o2.getNationality().compareTo(o1.getNationality());
-            }
-        });
+        per.sort((o1, o2) -> o2.getNationality().compareTo(o1.getNationality()));
         for (Person p:per){
             System.out.println(p.getName() + " - " + p.getNationality() + " - " + p.getAge());
         }
@@ -92,12 +72,7 @@ public class Repo {
     }
 
     public ArrayList<Person> sxTheoAgeAsc(){
-        Collections.sort(per, new Comparator<Person>() {
-            @Override
-            public int compare(Person o1, Person o2) {
-                return (int) (o1.getAge() - o2.getAge());
-            }
-        });
+        per.sort((o1, o2) -> (int) (o1.getAge() - o2.getAge()));
         for (Person p:per){
             System.out.println(p.getName() + " - " + p.getNationality() + " - " + p.getAge());
         }
@@ -106,12 +81,7 @@ public class Repo {
     }
 
     public ArrayList<Person> sxTheoAgeDesc(){
-        Collections.sort(per, new Comparator<Person>() {
-            @Override
-            public int compare(Person o1, Person o2) {
-                return (int) (o2.getAge() - o1.getAge());
-            }
-        });
+        per.sort((o1, o2) -> (int) (o2.getAge() - o1.getAge()));
         for (Person p:per){
             System.out.println(p.getName() + " - " + p.getNationality() + " - " + p.getAge());
         }
@@ -209,12 +179,7 @@ public class Repo {
     }
 
     public List<jsonArrayList> sxjsListAsc(){
-        Collections.sort(jsAL, new Comparator<jsonArrayList>() {
-            @Override
-            public int compare(jsonArrayList o1, jsonArrayList o2) {
-                return (int) (o1.getFreq() - o2.getFreq());
-            }
-        });
+        jsAL.sort((o1, o2) -> (int) (o1.getFreq() - o2.getFreq()));
         for (jsonArrayList j:jsAL){
             System.out.println(j.getNationality() + " - " + j.getFreq());
         }
@@ -223,12 +188,7 @@ public class Repo {
     }
 
     public List<jsonArrayList> sxjsListDesc(){
-        Collections.sort(jsAL, new Comparator<jsonArrayList>() {
-            @Override
-            public int compare(jsonArrayList o1, jsonArrayList o2) {
-                return (int) (o2.getFreq() - o1.getFreq());
-            }
-        });
+        jsAL.sort((o1, o2) -> (int) (o2.getFreq() - o1.getFreq()));
         for (jsonArrayList j:jsAL){
             System.out.println(j.getNationality() + " - " + j.getFreq());
         }
