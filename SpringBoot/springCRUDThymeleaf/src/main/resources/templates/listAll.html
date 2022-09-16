@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="home::Heading"></head>
+<body>
+    <div class="container">
+        <div class="row">
+            <a th:href="@{/}" class="col-sm-2">Back</a>
+            <h3 class="col-sm-6">List of customers</h3>
+        </div>
+
+        <div class="row my-3">
+            <form th:action="@{/search}" method="get">
+                <div class="col-6 d-flex">
+                    <button type="submit" class="btn btn-primary mx-3">Search by Name</button>
+                    <input type="text" placeholder="" name="name"/><br><br>
+                    <button type="submit" class="btn btn-primary mx-3">Search by Email</button>
+                    <input type="text" placeholder="" name="email"/><br><br>
+                </div>
+            </form>
+        </div>
+        <table class="table">
+            <thead>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr th:each="cust1,iter:${cust}">
+                    <td>
+                        <a th:href="@{/listAll/{id}(id=${cust1.id})}">
+                            <span th:text="${cust1.fullname}"></span>
+                        </a>
+                    </td>
+                    <td th:text="${cust1.email}"></td>
+                    <td th:text="${cust1.phone}"></td>
+                    <td>
+                        <span>
+                            <a th:href="@{/cust1/edit/{id}(id=${cust1.id})}">Edit</a>
+                        </span>&nbsp; &nbsp;
+                        <span>
+                            <a th:href="@{/cust1/delete/{id}(id=${cust1.id})}">Delete</a>
+                        </span>
+                    </td>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 
 @Repository
 public class Repo {
-    private ArrayList<Person> per =new ArrayList<Person>();
+        private ArrayList<Person> per =new ArrayList<Person>();
     private Map<String,Long> jsonArrayMap = new HashMap<String,Long>();
     private List<jsonArrayList> jsAL = new ArrayList<jsonArrayList>();
 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+  <head th:fragment="Heading">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <title>BT SpringBootCTmL</title>
+  </head>
+  <body>
+      <h1>Create-Read-Update-Delete</h1>
+      <ul>
+          <li><a th:href="@{/listAll}">List all</a></li>
+          <li><a th:href="@{/create}">Create</a></li>
+      </ul>
+  </body>
+</html>
