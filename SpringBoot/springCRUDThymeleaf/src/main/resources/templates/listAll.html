@@ -13,9 +13,19 @@
                 <div class="col-6 d-flex">
                     <button type="submit" class="btn btn-primary mx-3">Search by Name</button>
                     <input type="text" placeholder="" name="name"/><br><br>
+                </div>
+            </form>
+            <form th:action="@{/search/email}" method="get">
+                <div class="col-6 d-flex">
                     <button type="submit" class="btn btn-primary mx-3">Search by Email</button>
                     <input type="text" placeholder="" name="email"/><br><br>
                 </div>
+            </form>
+            <form th:action="@{/sortAsc}" method="get">
+                <button type="submit" class="btn btn-primary mx-3">Sort by Full Name Asc</button>
+            </form>
+            <form th:action="@{/sortDesc}" method="get">
+                <button type="submit" class="btn btn-primary mx-3">Sort by Full Name Desc</button>
             </form>
         </div>
         <table class="table">

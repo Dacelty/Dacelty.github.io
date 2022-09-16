@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Controller
 public class TLController {
@@ -85,7 +87,7 @@ public class TLController {
         }
     }
 
-    @GetMapping("/search")
+    @GetMapping("/search/email")
     public String searchCustEmail(HttpServletRequest request, Model model){
         String email = request.getParameter("email");
         if(email==""){
@@ -99,6 +101,21 @@ public class TLController {
         }
     }
 
+    @GetMapping("/sortAsc")
+    public String sortByNameAsc(Model model) {
+        List<Customer> cust = cRepo.getAll();
+        cust.sort((o1, o2) -> o1.getFullname().compareTo(o2.getFullname()));
+        model.addAttribute("cust", cust);
+        return "listAll";
+    }
+
+    @GetMapping("/sortDesc")
+    public String sortByNameDesc(Model model) {
+        List<Customer> cust = cRepo.getAll();
+        cust.sort((o1, o2) -> o2.getFullname().compareTo(o1.getFullname()));
+        model.addAttribute("cust", cust);
+        return "listAll";
+    }
 
     @GetMapping("/listAll/{id}")
     public String detail(@PathVariable("id") Integer id, Model model){

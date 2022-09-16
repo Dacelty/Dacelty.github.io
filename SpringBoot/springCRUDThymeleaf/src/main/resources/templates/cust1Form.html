@@ -3,6 +3,7 @@
 <head th:replace="home::Heading"></head>
 <body>
     <div class="container">
+        <a th:href="@{/}" class="col-sm-2">Back</a>
         <h1 class="text-center">Personal Information Form</h1>
         <form th:action="@{/post}" method="POST" th:object="${cust1}">
             <input type="hidden" placeholder="id" th:field="*{id}"/><br><br>

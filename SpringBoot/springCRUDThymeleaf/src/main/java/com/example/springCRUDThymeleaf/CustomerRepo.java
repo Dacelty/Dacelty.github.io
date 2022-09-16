@@ -70,6 +70,6 @@ public class CustomerRepo {
     }
 
     public Customer searchEmail(String email){
-        return customers.stream().filter(cust->cust.getFullname().contains(email)).findAny().orElse(null);
+        return customers.stream().filter(cust->cust.getEmail().contains(email)).findAny().orElse(null);
     }
 }
