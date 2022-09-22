@@ -92,13 +92,27 @@ for (const key in products) {
 }
 
 console.log('Câu 7:');
-let keys = Object.keys(products)
+for( let i = 0; i < products.length; i++){ 
+    
+    if ( products[i].brand == 'Samsung') { 
 
-for (let i = 0; i < keys.length; i++) {
-    if (products[keys[i]].brand == 'Samsung'){
-        products.splice(i,0);
+        products.splice(i, 1); 
     }
+
 }
+
+for (const key in products) {
+    console.log(products[key]);
+}
+
+console.log('Câu 8:');
+products.sort((a,b) => a.price - b.price);
+for (const key in products) {
+    console.log(products[key]);
+}
+
+console.log('Câu 9:');
+products.sort((a,b) => b.count - a.count);
 for (const key in products) {
     console.log(products[key]);
 }
