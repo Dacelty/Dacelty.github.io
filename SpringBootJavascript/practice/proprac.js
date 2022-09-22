@@ -90,3 +90,15 @@ products.push({
 for (const key in products) {
     console.log(products[key]);
 }
+
+console.log('Câu 7:');
+let keys = Object.keys(products)
+
+for (let i = 0; i < keys.length; i++) {
+    if (products[keys[i]].brand == 'Samsung'){
+        products.splice(i,0);
+    }
+}
+for (const key in products) {
+    console.log(products[key]);
+}
