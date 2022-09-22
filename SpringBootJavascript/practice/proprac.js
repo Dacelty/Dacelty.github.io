@@ -65,3 +65,28 @@ for (const key in products) {
         console.log(products[key]);
     }
 }
+
+console.log('Câu 4:');
+for (const key in products) {
+    if (products[key].price > 20000000){
+        console.log(products[key]);
+    }
+}
+
+console.log('Câu 5:');
+for (const key in products) {
+    if (products[key].name.includes('Pro') || products[key].name.includes('pro')){
+        console.log(products[key]);
+    }
+}
+
+console.log('Câu 6:');
+products.push({
+    name: "Iphone 13 Pro Max2223", 
+    price: 3000000, 
+    brand: "Apple", 
+    count: 2, 
+})
+for (const key in products) {
+    console.log(products[key]);
+}
