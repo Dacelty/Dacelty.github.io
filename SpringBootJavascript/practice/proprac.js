@@ -116,3 +116,14 @@ products.sort((a,b) => b.count - a.count);
 for (const key in products) {
     console.log(products[key]);
 }
+
+console.log('Câu 10:');
+function getMultipleRandom(arr, num) {
+    // trộn mảng ngẫu nhiên
+    const shuffled = arr.sort(() => 0.5 - Math.random());
+    // tạo mảng mới trả về 2 phần tử bắt đầu từ phần tử đầu tiên
+    let selected = shuffled.slice(0, num);
+    return selected;
+}
+
+console.log(getMultipleRandom(products,2));
