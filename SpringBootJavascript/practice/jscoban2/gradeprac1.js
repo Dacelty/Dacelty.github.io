@@ -11,30 +11,15 @@ const grades = [
     {name: 'Jane', grade: 9, sex: 'F'}
 ]
 
-function b1() {
-    let soHS = 0;
-    let dTong = 0;
-    for (const key in grades) {
-        soHS++;
-        dTong += grades[key].grade;
-    }
-    console.log('Tổng HS: ' + soHS);
-    console.log('Tổng thứ hạng: ' + dTong);
-    return dTong/soHS;
+for (const key in grades) {
+    console.log(grades[key]);
 }
-console.log(b1());
 
 console.log('---------------------------------')
-
-function b13() {
-    const b13 = [];
-    for (const key in grades) {
-        if (grades[key].name.split('',1) == 'J' && grades[key].sex == 'F'){
-            b13.push(grades[key]);
-        }
+for (const key in grades) {
+    if (grades[key].name.split('',1) == 'J' && grades[key].sex == 'F'){
+        console.log(grades[key]);
     }
-    return b13;
 }
-console.log(b13());
 
 console.log('---------------------------------')
