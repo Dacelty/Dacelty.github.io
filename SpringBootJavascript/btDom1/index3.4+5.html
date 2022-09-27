@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<p>Cho mã HTML có nội dung như sau (tạo thẻ ul-li bằng html):</p>
+
+
+<ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+ </ul>
+ 
+
+<script>
+let ul1 = document.querySelectorAll('li');
+let ul2 = document.getElementById("list");
+for (let i = 0; i < ul1.length; i++){
+    if (ul1[i].innerHTML == "Item 4"){
+        //Bài 4: Remove thẻ <li> 4
+        ul2.removeChild(ul2.children[i]);
+        //Bài 5: Thêm thẻ <li> mới thay thế cho thẻ <li> 4 bị xóa ở bước trước, thẻ <li> mới có nội dung bất kỳ
+        let li45 = document.createElement("li");
+        li45.appendChild(document.createTextNode("Item 4.5 - được tạo sau khi xóa thẻ Item 4"));
+        ul2.replaceChild(li45, ul2.childNodes[i+4]);
+        break;
+    }
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<p>Thêm 3 thẻ li có nội dung Item 8, Item 9, Item 10 vào cuối danh sách</p>
+
+
+<ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+ </ul>
+ 
+
+<script>
+var ul = document.getElementById("list");
+var li8 = document.createElement("li");
+var li9 = document.createElement("li");
+var li10 = document.createElement("li");
+li8.appendChild(document.createTextNode("Item 8"));
+li9.appendChild(document.createTextNode("Item 9"));
+li10.appendChild(document.createTextNode("Item 10"));
+ul.appendChild(li8);
+ul.appendChild(li9);
+ul.appendChild(li10);
+</script>
+
+
+</body>
+</html>
