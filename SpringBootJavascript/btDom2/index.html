@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        display: block;
+        background-color: #f3f3f3;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        float: left;
+        margin: 5px;
+        text-align: center;
+      }
+
+      .box:hover {
+        transform: scale(0.9);
+        transition-duration: 0.5s;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .box:active {
+        transform: scale(1.5);
+        transition-duration: 0.5s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>JS DOM</h1>
+      <button id="btn">More boxes</button>
+      <h4 id="score">
+        Total box:
+        <span class="points"></span>
+        <input
+          type="number"
+          placeholder="number of box to add"
+          name="number"
+          value="0"
+        />
+      </h4>
+
+      <div class="boxes"></div>
+    </div>
+  </body>
+  <script>
+    let colors = ["#3498db", "#9b59b6", "#e74c3c", "#2c3e50", "#d35400"];
+    const getRandomColor = () => {
+      return colors[Math.floor(Math.random() * colors.length)];
+    };
+    let boxes = [];
+    colors.forEach((color, i) => {
+      boxes.push({
+        name: `Box${i + 1}`,
+        color: getRandomColor(),
+      });
+    });
+    const count = document.querySelector("#score");
+    const boxElements = document.querySelector(".boxes");
+    const add = document.querySelector("#btn");
+
+    renderBox(boxes);
+    add.addEventListener("click", () => {
+      const number = document.querySelector("#score input").value;
+      for (let i = 0; i < number; i++) {
+        boxes.push({
+          name: `Box${boxes.length + 1}`,
+          color: getRandomColor(),
+        });
+      }
+      clearBox();
+      renderBox(boxes);
+    });
+
+    function renderBox(arr) {
+      arr.forEach((item, i) => {
+        const div = document.createElement("div");
+        div.classList.add("box");
+        div.style.backgroundColor = getRandomColor();
+        div.textContent = item.name;
+        div.addEventListener("click", (e) => {
+          arr.splice(i, 1);
+          clearBox();
+          renderBox(arr);
+        });
+        boxElements.appendChild(div);
+      });
+      count.firstChild.textContent = arr.length;
+    }
+    function clearBox() {
+      boxElements.innerHTML = "";
+      count.firstChild.textContent = "0";
+      count.querySelector("input").value = "";
+    }
+  </script>
+</html>
