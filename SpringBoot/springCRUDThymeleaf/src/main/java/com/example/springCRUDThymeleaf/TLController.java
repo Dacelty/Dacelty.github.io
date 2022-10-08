@@ -9,10 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Controller
 public class TLController {
@@ -55,7 +53,7 @@ public class TLController {
         return "cust1Form";
     }
 
-    @GetMapping("/cust1/edit/{id}")
+    @GetMapping("/listAll/cust1/edit/{id}")
     public String editCust(@PathVariable("id") int id, Model model) {
         Optional<Customer> cust1 = cRepo.get(id);
         if(cust1.isPresent()){

@@ -11,7 +11,7 @@ export default function App() {
   const [submitted, setSubmitted] = useState(false)
   const [valid, setValid] = useState(false);
 
-  const handleFN_inputChange = (event) => {
+/*   const handleFN_inputChange = (event) => {
     setVal({...val, firstName:event.target.value})
   }
 
@@ -21,7 +21,7 @@ export default function App() {
 
   const handleEm_inputChange = (event) => {
     setVal({...val, email:event.target.value})
-  }
+  } */
 
   const handleSub = (event) => {
     event.preventDefault();
@@ -37,7 +37,7 @@ export default function App() {
         {/* Uncomment the next line to show the success message */}
         {submitted && valid ? <div class="success-message">Success! Thank you for registering</div> : null}
         <input
-          onChange={handleFN_inputChange}
+          onChange={e => setVal({...val, firstName:e.target.value})}
           id="first-name"
           value={val.firstName}
           class="form-field"
@@ -47,7 +47,7 @@ export default function App() {
         />
         {submitted && !val.firstName ? <span id="first-name-error">Please enter a first name</span> : null}
         <input
-          onChange={handleLN_inputChange}
+          onChange={e => setVal({...val, lastName:e.target.value})}
           id="last-name"
           class="form-field"
           type="text"
@@ -56,7 +56,7 @@ export default function App() {
         />
         {submitted && !val.lastName ? <span id="last-name-error">Please enter a last name</span> : null} 
         <input
-          onChange={handleEm_inputChange}
+          onChange={e => setVal({...val, email:e.target.value})}
           id="email"
           class="form-field"
           type="text"
