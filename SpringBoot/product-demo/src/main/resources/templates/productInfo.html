@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template::header('productInfo')"></head>
+<body>
+<nav th:replace="template::menu"></nav>
+<br><br>
+<div class="container">
+  <div class="row my-5">
+    <div class="col-4 mx-auto">
+      <img th:src="@{/uploads/pic{id}.jpg(id=${product.id})}" alt="Photo" class="img-fluid">
+      <div class="d-flex justify-content-center">
+        <a th:href="@{/product/edit/{id}(id=${product.id})}">Edit</a>&nbsp;&nbsp;
+        <a th:href="@{/product/delete/{id}(id=${product.id})}">Delete</a><br>
+      </div>
+
+    </div>
+    <div class="col-2 mx-auto ">
+      <h6>Name</h6>
+      <p th:text="${product.name}"></p>
+    </div>
+    <div class="col-2 mx-auto ">
+      <h6>Description</h6>
+      <p th:text="${product.detail}"></p>
+    </div>
+    <div class="col-2 mx-auto">
+      <h6>Category</h6>
+      <p th:text="${product.category}"></p>
+    </div>
+  </div>
+  <footer th:replace="template::footer"></footer>
+</div>
+</body>
+</html>

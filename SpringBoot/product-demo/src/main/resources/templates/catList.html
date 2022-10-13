@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template::header('categoryList')"></head>
+<body>
+<nav th:replace="template::menu"></nav>
+<br><br><br><br>
+<div class="container my-3">
+  <h1 class="text-center">Category List</h1>
+  <table class="table">
+    <thead class="thead-dark">
+    <th scope="col">ID</th>
+    <th scope="col">Name</th>
+    <th scope="col">Action</th>
+    </thead>
+    <tbody>
+    <tr th:each="cat:${cats}">
+      <td th:text="${cat.id}"></td>
+      <td th:text="${cat.name}"></td>
+      <td>
+        <span><a th:href="@{/cat/edit/{id}(id=${cat.id})}">Edit</a></span>&nbsp;
+        <span><a th:href="@{/cat/delete/{id}(id=${cat.id})}">Delete</a></span>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<footer th:replace="template::footer"></footer>
+</body>
+</html>
