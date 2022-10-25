@@ -27,19 +27,6 @@ public class Topic {
     @Column(name = "name")
     private String name;
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-//        Topic topic = (Topic) o;
-//        return id != null && Objects.equals(id, topic.id);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return getClass().hashCode();
-//    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -1,7 +1,6 @@
 package com.example.ktRESTAPI.controller;
 
 import com.example.ktRESTAPI.entity.Course;
-import com.example.ktRESTAPI.entity.Topic;
 import com.example.ktRESTAPI.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,8 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-
-import static org.apache.logging.log4j.ThreadContext.isEmpty;
 
 @RestController
 @RequestMapping("api/v1")
@@ -47,10 +44,11 @@ public class CoursesController {
     public List<Course> searchCourse(@RequestParam Optional<String> name,@RequestParam Optional<String> topic) {
         if(name.isPresent() && topic.isEmpty()) {
             return courseService.getCourseByName(name.get());
+        } else if (topic.isPresent() && name.isEmpty()) {
+            return courseService.getCourseByTopicName(topic.get());
+        } else if (name.isPresent() && topic.isPresent()) {
+            return courseService.getCourseByNameAndTopicName(name.get(),topic.get());
         }
-//        else if (topic.isPresent() && name.isEmpty()) {
-//            return courseService.getCourseByTopic(topic.get());
-//        }
         return courseService.getCourse();
     }
 

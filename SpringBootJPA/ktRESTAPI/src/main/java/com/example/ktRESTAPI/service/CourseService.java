@@ -1,7 +1,6 @@
 package com.example.ktRESTAPI.service;
 
 import com.example.ktRESTAPI.entity.Course;
-import com.example.ktRESTAPI.entity.Topic;
 import com.example.ktRESTAPI.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,8 +30,13 @@ public class CourseService {
         return courseRepository.findByName(nameValue);
     }
 
+    public List<Course> getCourseByTopicName(String s) {
+        return courseRepository.findByTopicName(s);
+    }
 
-//    public List<Course> getCourseByTopic(String s) {
-//        return courseRepository.findByTopic(s);
-//    }
+    public List<Course> getCourseByNameAndTopicName(String s, String s1) {
+        return courseRepository.findByNameAndTopicName(s, s1);
+    }
+
+
 }

@@ -46,16 +46,5 @@ public class Course {
             inverseJoinColumns = @JoinColumn(name = "topics_id"))
     private Set<Topic> topics = new LinkedHashSet<>();
 
-//    @ManyToOne
-//    @JoinColumn(name = "user_id", nullable = false, unique = true)
-//    private User user;
-//
-//    @ManyToMany
-//    @JoinTable(name = "courses_topics",
-//            joinColumns = @JoinColumn(name = "course_id"),
-//            inverseJoinColumns = @JoinColumn(name = "topics_id"))
-//    private Set<Topic> topics = new LinkedHashSet<>();
-
-
 
 }
