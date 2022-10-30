@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="522b944e-9b08-4161-b9ec-1838893b7f98" name="Changes" comment="" />
+    <list default="true" id="522b944e-9b08-4161-b9ec-1838893b7f98" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,14 +56,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/GitHub/java-12/springboot/day_05/user-backend&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/NTC/Documents/GitHub/Dacelty.github.io/SpringBootJPA/ktRESTAPI",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
-  <component name="RunManager" selected="Application.KtRestapiApplication">
+}]]></component>
+  <component name="RunManager" selected="JUnit.KtRestapiApplicationTests.save_course">
     <configuration name="KtRestapiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ktRESTAPI.KtRestapiApplication" />
       <module name="ktRESTAPI" />
@@ -124,10 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KtRestapiApplication" />
         <item itemvalue="JUnit.KtRestapiApplicationTests.save_course" />
         <item itemvalue="JUnit.KtRestapiApplicationTests.save_topic" />
         <item itemvalue="JUnit.KtRestapiApplicationTests.save_user" />
+        <item itemvalue="Application.KtRestapiApplication" />
       </list>
     </recent_temporary>
   </component>

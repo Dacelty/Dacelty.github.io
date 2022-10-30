@@ -11,13 +11,6 @@ function App() {
         placeholder = "Search.." 
         onChange={event => {setsTerm(event.target.value)
         }}/>
-{/*       {jsonName.map((val, key) => {
-        return (
-          <div className='user' key={key}>
-            <p>{val.first_name}</p>
-          </div>
-        )
-      })} */}
       {jsonName.filter((val) => {
         if (sTerm == ""){
           return val
