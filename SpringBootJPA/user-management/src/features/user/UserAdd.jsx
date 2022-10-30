@@ -1,10 +1,6 @@
-import React, {useState, useEffect} from "react";
-import userList from "./UserList"
-import {useLocation} from 'react-router-dom';
+import React from "react";
 
 function UserAdd() {
-
-    const location = useLocation();
 
     return (
 

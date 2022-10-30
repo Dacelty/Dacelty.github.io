@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from "react";
 import jsonList from "../json/MOCK_DATA.json"
-import {Link, useNavigate} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 
 
 function UserList() {
     const [sTerm, setsTerm] = useState('')
     const [userList, setuserList] = useState(jsonList)
-    const navigate = useNavigate();
+
 
     useEffect(() => {
         const data = localStorage.getItem('currentList')
@@ -28,10 +28,6 @@ function UserList() {
         setuserList(updatedUserList);
     }
 
-    const toUserAdd=()=>{
-        navigate('/UserAdd',{state:userList});
-    }
-
     return (
         <div className="container mt-5 mb-5">
             <h2 className="text-center text-uppercase">Danh sách user</h2>
@@ -41,12 +37,10 @@ function UserList() {
                     <div className="d-flex justify-content-between align-items-center mt-5 mb-4">
                         <Link to={{
                             pathname: "/UserAdd",
-                            state: {userList} // your data array of objects
+/*                             state: {userList} */
                         }}
                         className="btn">
-                            <a className="btn btn-warning" >
                                 Tạo user
-                            </a>
                         </Link>
 {/*                         <a className="btn btn-warning" >
                             Tạo user
@@ -80,6 +74,7 @@ function UserList() {
                                     } else if (user.fullname.toLowerCase().includes(sTerm.toLowerCase())){
                                         return user;
                                     }
+                                    return null;
                                 })
                                 .map((user,i) => (
                                     <tr key={i}>
