@@ -68,7 +68,8 @@ function UserList() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {userList.filter((user) => {
+                                {userList
+                                .filter((user) => {
                                     if (sTerm === ""){
                                         return user;
                                     } else if (user.fullname.toLowerCase().includes(sTerm.toLowerCase())){

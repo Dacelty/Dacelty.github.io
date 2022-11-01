@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Read = () => {
   const [data, setData] = useState([]);
   const [tabledark, setTableDark] = useState("");
+  const [sTerm, setsTerm] = useState('')
 
   function getData() {
     axios
@@ -46,6 +47,13 @@ const Read = () => {
       </div>
       <div className="d-flex justify-content-between m-2">
         <h2>Read Operation</h2>
+        <input
+            type="text"
+            id="search"
+            className="form-control w-50"
+            placeholder="Tìm kiếm user"
+            onChange={event => {setsTerm(event.target.value)
+        }}/>
         <Link to="/">
           <button className="btn btn-secondary">Create</button>
         </Link>
@@ -60,7 +68,16 @@ const Read = () => {
             <th scope="col"></th>
           </tr>
         </thead>
-        {data.map((eachData) => {
+        {data
+            .filter((data) => {
+                if (sTerm === ""){
+                    return data;
+                } else if (data.name.toLowerCase().includes(sTerm.toLowerCase())){
+                    return data;
+                }
+                    return null;
+                })
+        .map((eachData) => {
           return (
             <>
               <tbody>
