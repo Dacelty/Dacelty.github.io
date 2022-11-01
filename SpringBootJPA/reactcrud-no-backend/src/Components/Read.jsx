@@ -80,23 +80,23 @@ const Read = () => {
             }
                 return null;
             })
-        .map((eachData) => {
+        .map((user) => {
           return (
             <>
               <tbody>
                 <tr>
-                  <th scope="row">{eachData.id}</th>
-                  <td>{eachData.name}</td>
-                  <td>{eachData.email}</td>
+                  <th scope="row">{user.id}</th>
+                  <td>{user.name}</td>
+                  <td>{user.email}</td>
                   <td>
                     <Link to="/update">
                       <button
                         className="btn btn-success"
                         onClick={() =>
                           setToLocalStorage(
-                            eachData.id,
-                            eachData.name,
-                            eachData.email
+                            user.id,
+                            user.name,
+                            user.email
                           )
                         }
                       >
@@ -107,7 +107,7 @@ const Read = () => {
                   <td>
                     <button
                       className="btn btn-danger"
-                      onClick={() => handleDelete(eachData.id)}
+                      onClick={() => handleDelete(user.id)}
                     >
                       Delete
                     </button>
