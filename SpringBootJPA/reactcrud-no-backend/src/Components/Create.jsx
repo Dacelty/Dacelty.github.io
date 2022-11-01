@@ -12,7 +12,7 @@ const Create = () => {
     const dmCheck = localStorage.getItem('darkmode')
     if (dmCheck === "true"){
       setDarkModeText("text-light")
-    } else {
+    } else if (dmCheck === "false"){
       setDarkModeText("")
     }
 },[])
