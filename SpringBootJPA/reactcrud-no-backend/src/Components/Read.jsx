@@ -69,14 +69,14 @@ const Read = () => {
           </tr>
         </thead>
         {data
-            .filter((data) => {
-                if (sTerm === ""){
-                    return data;
-                } else if (data.name.toLowerCase().includes(sTerm.toLowerCase())){
-                    return data;
-                }
-                    return null;
-                })
+        .filter((data) => {
+            if (sTerm === ""){
+                return data;
+            } else if (data.name.toLowerCase().includes(sTerm.toLowerCase())){
+                return data;
+            }
+                return null;
+            })
         .map((eachData) => {
           return (
             <>
@@ -88,7 +88,7 @@ const Read = () => {
                   <td>
                     <Link to="/update">
                       <button
-                        className="btn-success"
+                        className="btn btn-success"
                         onClick={() =>
                           setToLocalStorage(
                             eachData.id,
@@ -103,7 +103,7 @@ const Read = () => {
                   </td>
                   <td>
                     <button
-                      className="btn-danger"
+                      className="btn btn-danger"
                       onClick={() => handleDelete(eachData.id)}
                     >
                       Delete
