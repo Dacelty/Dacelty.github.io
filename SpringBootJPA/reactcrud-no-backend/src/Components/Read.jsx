@@ -4,8 +4,20 @@ import { Link } from "react-router-dom";
 
 const Read = () => {
   const [data, setData] = useState([]);
-  const [tabledark, setTableDark] = useState("");
+  const [darkmodeTable, setDarkModeTable] = useState("");
+  const [darkmodeText, setDarkModeText] = useState("");
   const [sTerm, setsTerm] = useState('')
+  
+  useEffect(() => {
+    const dmCheck = localStorage.getItem('darkmode')
+    if (dmCheck === "true"){
+      setDarkModeText("text-light")
+      setDarkModeTable("table-dark")    
+    } else if (dmCheck === "false"){
+      setDarkModeText("")
+      setDarkModeTable("")
+    }
+},[])
 
   function getData() {
     axios
@@ -35,18 +47,9 @@ const Read = () => {
 
   return (
     <>
-      <div className="form-check form-switch">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          onClick={() => {
-            if (tabledark === "table-dark") setTableDark("");
-            else setTableDark("table-dark");
-          }}
-        />
-      </div>
+
       <div className="d-flex justify-content-between m-2">
-        <h2>Read Operation</h2>
+        <h2 className={`${darkmodeText}`}>Read Operation</h2>
         <input
             type="text"
             id="search"
@@ -58,7 +61,7 @@ const Read = () => {
           <button className="btn btn-secondary">Create</button>
         </Link>
       </div>
-      <table className={`table ${tabledark}`}>
+      <table className={`table ${darkmodeTable}`}>
         <thead>
           <tr>
             <th scope="col">#</th>
