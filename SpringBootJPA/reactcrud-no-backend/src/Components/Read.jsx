@@ -49,7 +49,7 @@ const Read = () => {
     <>
 
       <div className="d-flex justify-content-between m-2">
-        <h2 className={`${darkmodeText}`}>Read Operation</h2>
+        <h2 className={`${darkmodeText}`}>Read</h2>
         <input
             type="text"
             id="search"
