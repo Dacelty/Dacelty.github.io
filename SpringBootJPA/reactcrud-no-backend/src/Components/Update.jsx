@@ -7,7 +7,6 @@ const Update = () => {
   const [id, setId] = useState(0);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [darkmodeText, setDarkModeText] = useState("");
 
   const navigate = useNavigate();
 
@@ -16,12 +15,7 @@ const Update = () => {
     setName(localStorage.getItem("name"));
     setEmail(localStorage.getItem("email"));
     
-    const dmCheck = localStorage.getItem('darkmode')
-    if (dmCheck === "true"){
-      setDarkModeText("text-light")
-    } else if (dmCheck === "false"){
-      setDarkModeText("")
-    }
+
   }, []);
 
   const handleUpdate = (e) => {
@@ -39,9 +33,9 @@ const Update = () => {
 
   return (
     <>
-      <h2 className={`mb-3 ${darkmodeText}`}>Update</h2>
+      <h2 className={`mb-3`}>Update</h2>
       <form>
-        <div className={`mb-3 ${darkmodeText}`}>
+        <div className={`mb-3`}>
           <label className="form-label">Name</label>
           <input
             type="text"
@@ -51,7 +45,7 @@ const Update = () => {
           />
         </div>
 
-        <div className={`mb-3 ${darkmodeText}`}>
+        <div className={`mb-3`}>
           <label className="form-label">Email address</label>
           <input
             type="email"

@@ -4,20 +4,7 @@ import { Link } from "react-router-dom";
 
 const Read = () => {
   const [data, setData] = useState([]);
-  const [darkmodeTable, setDarkModeTable] = useState("");
-  const [darkmodeText, setDarkModeText] = useState("");
   const [sTerm, setsTerm] = useState('')
-  
-  useEffect(() => {
-    const dmCheck = localStorage.getItem('darkmode')
-    if (dmCheck === "true"){
-      setDarkModeText("text-light")
-      setDarkModeTable("table-dark")    
-    } else if (dmCheck === "false"){
-      setDarkModeText("")
-      setDarkModeTable("")
-    }
-},[])
 
   function getData() {
     axios
@@ -49,7 +36,7 @@ const Read = () => {
     <>
 
       <div className="d-flex justify-content-between m-2">
-        <h2 className={`${darkmodeText}`}>Read</h2>
+        <h2>Read</h2>
         <input
             type="text"
             id="search"
@@ -61,7 +48,7 @@ const Read = () => {
           <button className="btn btn-secondary">Create</button>
         </Link>
       </div>
-      <table className={`table ${darkmodeTable}`}>
+      <table className={`table`}>
         <thead>
           <tr>
             <th scope="col">#</th>
