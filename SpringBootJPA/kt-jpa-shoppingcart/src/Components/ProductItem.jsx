@@ -8,7 +8,7 @@ function ProductItem({item,remove,inc,dec}) {
                 return (
                     <div className="product-item d-flex border mb-4">
                     <div className="image">
-                        <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="sản phẩm 1" />
+                        <img src={i.image} alt={i.name} />
                     </div>
                     <div className="info d-flex flex-column justify-content-between px-4 py-3 flex-grow-1">
                         <div>
