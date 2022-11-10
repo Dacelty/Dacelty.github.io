@@ -1,2 +1,5 @@
 content.txt
 *.xml
+
+# Local Netlify folder
+.netlify
