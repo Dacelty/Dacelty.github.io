@@ -21,7 +21,7 @@ public class ProductController {
     public String trangChu(Model model) {
         List<Product> products = productService.getAll();
         model.addAttribute("listProduct", products);
-        return "index.html";
+        return "index-acc.html";
     }
 
     @GetMapping("product-add")
@@ -34,8 +34,6 @@ public class ProductController {
     @PostMapping("/product/save")
     public String save(@ModelAttribute Product product, Model model){
         productService.save(product);
-//        List<Product> products = productService.getAll();
-//        model.addAttribute("listProduct", products);
         return "redirect:/home";
     }
 

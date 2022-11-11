@@ -7,12 +7,12 @@
 <body>
     <h1>Title</h1>
 
-    <p th:each="obj : ${listProduct}">
+    <p th:each="obj : ${listAccount}">
         <span th:text="${obj.id}"></span>
-        <span th:text="${obj.productName}"></span>
-        <span th:text="${obj.price}"></span>
+        <span th:text="${obj.username}"></span>
+        <span th:text="${obj.password}"></span>
+        <span th:text="${obj.name}"></span>
     </p>
-
 
 
 
