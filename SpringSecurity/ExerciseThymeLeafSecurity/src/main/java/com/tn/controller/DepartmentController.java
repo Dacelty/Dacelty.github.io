@@ -13,7 +13,7 @@ import java.util.List;
 
 @Controller
 public class DepartmentController {
-    
+
     @Autowired
     private DepartmentService departmentService;
 
