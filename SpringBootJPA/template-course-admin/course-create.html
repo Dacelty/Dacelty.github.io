@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tạo khóa học</title>
+
+    <!-- Link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Link select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Link tự viết -->
+    <link rel="stylesheet" href="./css/style-admin.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="header d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-start align-items-center">
+                <div class="logo">
+                    <a href="./course-list.html">
+                        <img src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a class="text-white ms-5" href="./course-list.html">Danh sách khóa học</a>
+                    <a class="text-white ms-3" href="./course-create.html">Tạo khóa học</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="course-list mt-4 mb-4">
+        <div class="container">
+            <div class="mb-4">
+                <button class="btn-custom btn-create-course">
+                    <span><i class="fa-solid fa-plus"></i></span>
+                    Tạo
+                </button>
+                <a href="./course-list.html" class="btn-custom btn-refresh">
+                    <span><i class="fa-solid fa-angle-left"></i></span>
+                    Quay lại
+                </a>
+            </div>
+
+            <div class="course-list-inner p-2">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mb-3">
+                            <label for="course-name" class="form-label fw-bold">Tên khóa học</label>
+                            <input type="text" class="form-control" id="course-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="course-description" class="form-label fw-bold">Mô tả</label>
+                            <textarea class="form-control" id="course-description" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="course-type" class="form-label fw-bold">Hình thức học</label>
+                            <select class="form-control" id="course-type">
+                                <option hidden>- Chọn hình thức học</option>
+                                <option value="online">Online</option>
+                                <option value="onlab">Onlab</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="course-topic" class="form-label fw-bold">Chủ đề</label>
+                            <select class="form-control" id="course-topic" multiple="multiple">
+                                <option value="1">Backend</option>
+                                <option value="2">Frontend</option>
+                                <option value="3">Mobile</option>
+                                <option value="4">Lập trình web</option>
+                                <option value="5">Database</option>
+                                <option value="6">Devops</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="course-supporter" class="form-label fw-bold">Tư vấn viên</label>
+                            <select class="form-control" id="course-supporter">
+                                <option hidden>- Chọn tư vấn viên</option>
+                                <option value="1">Nguyễn Văn A</option>
+                                <option value="2">Trần Văn B</option>
+                                <option value="3">Ngô Thị C</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        const courseTopic = $("#course-topic");
+
+        // Kích hoạt select2
+        courseTopic.select2({
+            placeholder: "- Chọn chủ đề",
+        });
+    </script>
+</body>
+
+</html>

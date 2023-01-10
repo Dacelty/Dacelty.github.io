@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:fragment="Heading">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Department</title>
+</head>
+<body>
+<h1>Trang chủ</h1>
+<button class="btn btn-primary mx-3"><a th:href="@{/department-add}"  style="color: aliceblue;text-decoration: none">Add Department</a></button>
+<table class="table table-striped">
+    <thead>
+    <th>Id</th>
+    <th>Department Name</th>
+    <th>Manager Name</th>
+
+    </thead>
+    <tbody>
+    <tr th:each="obj :${listDepartment}">
+        <td th:text="${obj.id}"></td>
+        <td th:text="${obj.departmentName}"></td>
+        <td th:text="${obj.nameManager}"></td>
+        <td ></td>
+
+
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Employee</title>
+</head>
+<body>
+    <h1>List Employee</h1>
+
+    <p th:each="obj : ${listEmployee}">
+        <span th:text="${obj.id}">Id</span> -
+        <span th:text="${obj.hoTen}">Ho Ten</span>
+        <span th:text="${obj.email}">Ho Ten</span>
+    </p>
+</body>
+</html>
