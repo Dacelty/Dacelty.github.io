@@ -2,15 +2,15 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import {
-    useDeleteBlogMutation,
-    useGetBlogsQuery,
-} from "../../../../app/services/blogService";
+    useGetItemsQuery,
+    useDeleteItemMutation,
+} from "../../../../app/services/itemService";
 import { convertDate } from "../../../../utils/utils";
 
 function BlogAdminList() {
     const { items } = useSelector((state) => state.items);
-    const { isLoading } = useGetBlogsQuery();
-    const [deleteBlog] = useDeleteBlogMutation();
+    const { isLoading } = useGetItemsQuery();
+    const [deleteBlog] = useDeleteItemMutation();
 
     const handleDeleteBlog = (id) => {
         const isConfirm = window.confirm("Bạn có muốn xóa không?");
@@ -58,19 +58,19 @@ function BlogAdminList() {
                             {items.map((item) => (
                                 <tr key={item.id}>
                                     <td>
-                                        {item.id}
+                                        {item.name}
                                     </td>
                                     <td>
-
+                                        {item.category.name}
                                     </td>
                                     <td>
-
+                                        {item.quantity}
                                     </td>
                                     <td>
-
+                                        {item.price}
                                     </td>
                                     <td>
-
+                                        {convertDate(item.createdAt)}
                                     </td>
                                     <td>
 
