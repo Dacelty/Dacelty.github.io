@@ -1,5 +1,7 @@
 package com.example.doan_ecomjpshop.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
@@ -21,6 +23,7 @@ public class Category {
 
     private String name;
 
+    @JsonBackReference
     @OneToMany(mappedBy = "category", orphanRemoval = true)
     private List<Item> items = new ArrayList<>();
 

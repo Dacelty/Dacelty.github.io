@@ -1,5 +1,6 @@
 package com.example.doan_ecomjpshop.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
@@ -34,6 +35,7 @@ public class SaleOrder {
 
     private boolean status;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "saleOrder", orphanRemoval = true)
     private List<SaleOrderDetails> saleOrderDetailses = new ArrayList<>();
 

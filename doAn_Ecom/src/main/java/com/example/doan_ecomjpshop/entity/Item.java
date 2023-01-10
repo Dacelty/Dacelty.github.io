@@ -1,5 +1,7 @@
 package com.example.doan_ecomjpshop.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import org.hibernate.Hibernate;
 
@@ -34,6 +36,7 @@ public class Item {
 
     private Integer price;
 
+    @JsonManagedReference
     @ManyToOne(optional = false)
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
