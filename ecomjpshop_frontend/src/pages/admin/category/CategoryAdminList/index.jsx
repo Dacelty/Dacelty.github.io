@@ -44,7 +44,7 @@ function CategoryAdminList() {
         }
 
         if (name == "") {
-            alert("Tên không được để trống");
+            alert("Tên không được để trống.");
             return;
         }
 
