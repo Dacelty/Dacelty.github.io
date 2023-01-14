@@ -15,14 +15,11 @@ export const categoryService = baseApi.injectEndpoints({
             }
         }),
         editCategory: builder.mutation({
-            query(data) {
-                alert(JSON.stringify(data));
-                return {
-                  url: `/categories/${data.id}`,
-                  method: 'PUT',
-                  body: data
-                }
-              },
+            query: (data) => ({
+                url: `/categories/${data.id}`,
+                method: "PUT",
+                body: data
+            })
         }),
         createCategory: builder.mutation({
             query: (data) => ({
