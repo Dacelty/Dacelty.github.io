@@ -82,7 +82,7 @@ function Sidebar() {
                                 <ul className="p-0">
                                     <li className="my-2">
                                         <Link to={"/admin/categories"}>
-                                            Danh sách category
+                                            Danh sách/Tạo category
                                         </Link>
                                     </li>
                                 </ul>

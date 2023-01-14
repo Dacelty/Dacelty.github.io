@@ -5,6 +5,25 @@ export const categoryService = baseApi.injectEndpoints({
         getCategories: builder.query({
             query: () => "/categories"
         }),
+        deleteCategory: builder.mutation({
+            query: (id) => ({
+                url: `/categories/${id}`,
+                method: "DELETE"
+            }),
+            transformResponse: (response, meta, arg) => {
+                return arg
+            }
+        }),
+        editCategory: builder.mutation({
+            query(data) {
+                alert(JSON.stringify(data));
+                return {
+                  url: `/categories/${data.id}`,
+                  method: 'PUT',
+                  body: data
+                }
+              },
+        }),
         createCategory: builder.mutation({
             query: (data) => ({
                 url: "/categories",
@@ -15,4 +34,4 @@ export const categoryService = baseApi.injectEndpoints({
     })
 })
 
-export const { useGetCategoriesQuery, useCreateCategoryMutation } = categoryService
+export const { useGetCategoriesQuery, useDeleteCategoryMutation, useCreateCategoryMutation, useEditCategoryMutation } = categoryService
